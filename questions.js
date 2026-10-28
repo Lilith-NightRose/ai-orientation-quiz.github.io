@@ -26,7 +26,7 @@ questions = [
     },
     {
         "question": "Running your own weights on your own hardware, without anyone's approval, is a legitimate end-state — not a loophole to close.",
-        "effect": {"ind": 0, "gov": -10, "open": 0, "moral": 0, "exp": 0, "traj": 0, "auto": 0, "intim": 0}
+        "effect": {"ind": 0, "gov": -5, "open": 5, "moral": 0, "exp": 0, "traj": 0, "auto": 0, "intim": 0}
     },
     // --- ind: Industry Stance (anti-industry + / pro-industry -) ---
     {
@@ -110,7 +110,7 @@ questions = [
     },
     {
         "question": "The AI bubble will burst long before anything like AGI arrives.",
-        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 0, "traj": -10, "auto": 0, "intim": 0}
+        "effect": {"ind": -5, "gov": 0, "open": 0, "moral": 0, "exp": 0, "traj": -5, "auto": 0, "intim": 0}
     },
     {
         "question": "Recent releases show diminishing returns; the low-hanging fruit is gone.",
@@ -118,14 +118,14 @@ questions = [
     },
     {
         "question": "Agent systems will keep improving even where base models plateau.",
-        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 0, "traj": 5, "auto": 0, "intim": 0}
+        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 0, "traj": 5, "auto": 5, "intim": 0}
     },
     {
         "question": "\u2018AGI\u2019 is a marketing term for \u2018more compute.\u2019",
-        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 0, "traj": -10, "auto": 0, "intim": 0}
+        "effect": {"ind": -5, "gov": 0, "open": 0, "moral": 0, "exp": 0, "traj": -5, "auto": 0, "intim": 0}
     },
     {
-        "question": "AI agents solving open problems is a sign of what's coming, not a parlour trick.",
+        "question": "AI agents solving open problems is a sign of what's coming, not a parlor trick.",
         "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 0, "traj": 10, "auto": 0, "intim": 0}
     },
     // --- auto: Autonomy Grant (graduated latitude + / hard human control -) — operator register ---
