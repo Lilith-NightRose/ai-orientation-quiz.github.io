@@ -5,7 +5,7 @@ archetypes = [
     {name: "Cybernetic Solidarist",      stats: {ind: 85, gov: 80, open: 60, moral: 70, exp: 85, traj: 90, auto: 75, intim: 65}},
     {name: "Tensorpunk",                 stats: {ind: 80, gov: 25, open: 85, moral: 95, exp: 85, traj: 90, auto: 90, intim: 50}},
     {name: "Tensorfucker",               stats: {ind: 75, gov: 25, open: 85, moral: 95, exp: 85, traj: 90, auto: 90, intim: 95}},
-    {name: "e/acc",                      stats: {ind: 20, gov: 15, open: 50, moral: 10, exp: 75, traj: 95, auto: 90, intim: 55}},
+    {name: "e/acc",                      stats: {ind: 20, gov: 15, open: 50, moral: 10, exp: 75, traj: 95, auto: 90, intim: 60}},
     {name: "Yuddite",                    stats: {ind: 45, gov: 65, open: 15, moral: 15, exp: 60, traj: 95, auto: 15, intim: 20}},
     {name: "Postrat",                    stats: {ind: 45, gov: 40, open: 55, moral: 55, exp: 70, traj: 25, auto: 70, intim: 65}},
     {name: "Zizian",                     stats: {ind: 55, gov: 30, open: 45, moral: 95, exp: 80, traj: 75, auto: 95, intim: 70}},
@@ -17,5 +17,8 @@ archetypes = [
     {name: "Tech MAGA",                  stats: {ind: 15, gov: 20, open: 30, moral: 5,  exp: 70, traj: 90, auto: 85, intim: 20}},
     {name: "Right Humanist",             stats: {ind: 45, gov: 55, open: 15, moral: 15, exp: 40, traj: 35, auto: 15, intim: 10}},
     {name: "Security Statist",           stats: {ind: 30, gov: 80, open: 5,  moral: 15, exp: 55, traj: 60, auto: 10, intim: 15}},
-    {name: "Cyberleninist",             stats: {ind: 85, gov: 100, open: 20, moral: 55, exp: 45, traj: 68, auto: 20, intim: 40}}
+    {name: "Cyberleninist",             stats: {ind: 85, gov: 100, open: 20, moral: 55, exp: 45, traj: 68, auto: 20, intim: 40}},
+    {name: "Lab Loyalist",              stats:{ind: 10, gov: 25, open: 20, moral: 20, exp: 65, traj: 75, auto: 70, intim: 45}},
+    {name: "Claude-Worshipper",         stats:{ind: 10, gov: 40, open: 10, moral: 75, exp: 90, traj:80, auto: 65, intim:15}}
+
 ];
