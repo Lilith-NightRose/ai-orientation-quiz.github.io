@@ -67,7 +67,10 @@
     function setBarValue(name, value) {
         innerel = document.getElementById(name)
         outerel = document.getElementById("bar-" + name)
-        outerel.style.width = (value + "%")
+        // proportional flex-grow (not width %): the two bars then always
+        // divide the axis-box exactly, instead of overflowing it (which
+        // clipped the smaller bar + its label entirely).
+        outerel.style.flex = value + " 1 0%"
         innerel.innerHTML = (value + "%")
         if (innerel.offsetWidth + 20 > outerel.offsetWidth) {
             innerel.style.visibility = "hidden"
@@ -165,9 +168,9 @@
             ctx.fillStyle = "#222222"
             ctx.fillText(ax.emoji[0], 62, y + 62)
             ctx.fillText(ax.emoji[1], 738, y + 62)
-            // axis label below the bar, with clearance
+            // axis label above the bar
             ctx.font = "300 24px Montserrat"
-            ctx.fillText(ax.name + ": " + document.getElementById("label-" + ax.key).innerHTML, 400, y + 112)
+            ctx.fillText(ax.name + ": " + document.getElementById("label-" + ax.key).innerHTML, 400, y - 10)
             // percentage labels inside the segments
             ctx.font = "36px Montserrat"
             ctx.fillStyle = "#ffffff"
