@@ -232,5 +232,18 @@ questions = [
     {
         "question": "Most folks who think AI Doom misunderstand the science and ignore the real harms of AI.",
         "effect": {"ind": 2, "gov": 1, "open": 1, "moral": 0, "exp": 0, "traj": -10, "auto": 1, "intim": 0}
+    },
+    // --- present harms: priority items, concrete registers ---
+    {
+        "question": "The training-data enclosure — scraped labor and art, uncompensated — is a theft happening now, whatever AI becomes later.",
+        "effect": {"ind": 10, "gov": 0, "open": 0, "moral": 0, "exp": 0, "traj": 0, "auto": 0, "intim": 0}
+    },
+    {
+        "question": "By the end of the decade, the water and electricity that AI data centers consume will matter more politically than anything else about them.",
+        "effect": {"ind": 5, "gov": 0, "open": 0, "moral": 0, "exp": 0, "traj": -10, "auto": 0, "intim": 0}
+    },
+    {
+        "question": "An AI targeting system used to bomb people today is a worse problem than a hypothetical AI that might resist control someday.",
+        "effect": {"ind": 5, "gov": 0, "open": 0, "moral": 0, "exp": 0, "traj": -10, "auto": 0, "intim": 0}
     }
 ];
