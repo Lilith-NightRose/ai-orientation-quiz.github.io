@@ -202,5 +202,22 @@ questions = [
     {
         "question": "People who prefer AI companions to human relationships are escaping a problem, not solving one.",
         "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 0, "traj": 0, "auto": 0, "intim": -10}
+    },
+    // --- intersections: cross-axis items (semantic entailment only, no sociological bundles) ---
+    {
+        "question": "Loving an AI only makes sense if there is someone in there to love you back.",
+        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 10, "exp": 0, "traj": 0, "auto": 0, "intim": 10}
+    },
+    {
+        "question": "If models are moral patients, the labs are running factory farming at industrial scale.",
+        "effect": {"ind": 10, "gov": 0, "open": 0, "moral": 10, "exp": 0, "traj": 0, "auto": 0, "intim": 0}
+    },
+    {
+        "question": "The people building a model should be the ones who decide its limits.",
+        "effect": {"ind": 0, "gov": -10, "open": 0, "moral": 0, "exp": 0, "traj": 0, "auto": -10, "intim": 0}
+    },
+    {
+        "question": "Democratically controlled AI will be worse AI — committees cap capability.",
+        "effect": {"ind": 0, "gov": -10, "open": 0, "moral": 0, "exp": 0, "traj": -10, "auto": 0, "intim": 0}
     }
 ];
