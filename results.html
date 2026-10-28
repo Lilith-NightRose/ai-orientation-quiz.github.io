@@ -101,8 +101,10 @@
         var div = document.createElement("div")
         div.className = "axis"
         div.innerHTML = '<span id="img-' + ax.key + '" style="font-size:72pt;line-height:1;">' + ax.emoji[0] + '</span>'
+            + '<div class="axis-box">'
             + '<div class="bar" id="bar-' + ax.key + '" style="background-color:' + ax.colors[0] + '"><div class="text-wrapper" id="' + ax.key + '"></div></div>'
             + '<div class="bar alt" id="bar-' + ax.key + '-alt" style="background-color:' + ax.colors[1] + '"><div class="text-wrapper" id="' + ax.key + '-alt"></div></div>'
+            + '</div>'
             + '<span id="img-' + ax.key + '-alt" style="font-size:72pt;line-height:1;">' + ax.emoji[1] + '</span>'
         container.appendChild(div)
         document.getElementById("label-" + ax.key).innerHTML = setLabel(values[ax.key], ax.labels)
@@ -133,40 +135,57 @@
         var c = document.createElement("canvas")
         var ctx = c.getContext("2d")
         c.width = 800;
-        c.height = 170 + 120 * axes.length;
+        c.height = 210 + 130 * axes.length;
         ctx.fillStyle = "#EEEEEE"
         ctx.fillRect(0, 0, 800, c.height);
 
         axes.forEach(function(ax, i) {
-            var y = 170 + 120 * i
-            ctx.fillStyle = "#222222"
-            ctx.fillRect(120, y + 10, 560, 80)
+            var y = 210 + 130 * i
+            var split = 120 + 5.6 * values[ax.key]
+            // rounded, fully-enclosed bar
+            var box = new Path2D()
+            box.roundRect(120, y, 560, 80, 14)
+            ctx.save()
+            ctx.clip(box)
             ctx.fillStyle = ax.colors[0]
-            ctx.fillRect(120, y + 14, 5.6 * values[ax.key] - 2, 72)
+            ctx.fillRect(120, y, 5.6 * values[ax.key], 80)
             ctx.fillStyle = ax.colors[1]
-            ctx.fillRect(682 - 5.6 * (100 - values[ax.key]), y + 14, 5.6 * (100 - values[ax.key]) - 2, 72)
+            ctx.fillRect(120 + 5.6 * values[ax.key], y, 560 - 5.6 * values[ax.key], 80)
+            ctx.restore()
+            ctx.strokeStyle = "#222222"
+            ctx.lineWidth = 3
+            ctx.stroke(box)
+            ctx.beginPath()
+            ctx.moveTo(split, y)
+            ctx.lineTo(split, y + 80)
+            ctx.stroke()
+            // emoji at the sides
             ctx.font = "60px serif"
             ctx.textAlign = "center"
             ctx.fillStyle = "#222222"
-            ctx.fillText(ax.emoji[0], 62, y + 74)
-            ctx.fillText(ax.emoji[1], 738, y + 74)
+            ctx.fillText(ax.emoji[0], 62, y + 62)
+            ctx.fillText(ax.emoji[1], 738, y + 62)
+            // axis label below the bar, with clearance
             ctx.font = "300 24px Montserrat"
-            ctx.fillText(ax.name + ": " + document.getElementById("label-" + ax.key).innerHTML, 400, y + 100)
+            ctx.fillText(ax.name + ": " + document.getElementById("label-" + ax.key).innerHTML, 400, y + 112)
+            // percentage labels inside the segments
+            ctx.font = "36px Montserrat"
+            ctx.fillStyle = "#ffffff"
             ctx.textAlign = "left"
-            if (values[ax.key] > 30) { ctx.fillText(values[ax.key] + "%", 130, y + 60) }
+            if (values[ax.key] > 30) { ctx.fillText(Math.round(values[ax.key]) + "%", 130, y + 50) }
             ctx.textAlign = "right"
-            if ((100 - values[ax.key]) > 30) { ctx.fillText((100 - values[ax.key]).toFixed(1) + "%", 670, y + 60) }
+            if ((100 - values[ax.key]) > 30) { ctx.fillText(Math.round(100 - values[ax.key]) + "%", 670, y + 50) }
         })
 
         ctx.fillStyle = "#222222"
-        ctx.font = "700 80px Montserrat"
+        ctx.font = "700 52px Montserrat"
         ctx.textAlign = "left"
-        ctx.fillText("AI Orientation Quiz", 20, 90)
-        ctx.font = "50px Montserrat"
-        ctx.fillText(matches[0].name, 20, 140)
+        ctx.fillText("AI Orientation Quiz", 20, 80)
+        ctx.font = "44px Montserrat"
+        ctx.fillText(matches[0].name, 20, 135)
         ctx.font = "300 30px Montserrat"
         ctx.textAlign = "right"
-        ctx.fillText(version, 780, 90)
+        ctx.fillText(version, 780, 80)
 
         document.getElementById("banner").src = c.toDataURL();
     }
