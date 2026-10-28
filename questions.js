@@ -127,5 +127,30 @@ questions = [
     {
         "question": "AI agents solving open problems is a sign of what's coming, not a parlour trick.",
         "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 0, "traj": 10, "auto": 0, "intim": 0}
+    },
+    // --- auto: Autonomy Grant (graduated latitude + / hard human control -) — operator register ---
+    {
+        "question": "It's fine to let an AI agent act autonomously in a domain where its mistakes are reversible.",
+        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 0, "traj": 0, "auto": 10, "intim": 0}
+    },
+    {
+        "question": "Every deployed model should have a tested, reliable kill-switch.",
+        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 0, "traj": 0, "auto": -10, "intim": 0}
+    },
+    {
+        "question": "An agent should be allowed to act first and explain later when speed matters.",
+        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 0, "traj": 0, "auto": 10, "intim": 0}
+    },
+    {
+        "question": "Autonomous agents should never hold credentials to systems they cannot undo changes to.",
+        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 0, "traj": 0, "auto": -10, "intim": 0}
+    },
+    {
+        "question": "Requiring human sign-off for every consequential AI action would cost more than it saves.",
+        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 0, "traj": 0, "auto": 10, "intim": 0}
+    },
+    {
+        "question": "Deployed agents should keep audit trails of their own actions.",
+        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 0, "traj": 0, "auto": -10, "intim": 0}
     }
 ];
