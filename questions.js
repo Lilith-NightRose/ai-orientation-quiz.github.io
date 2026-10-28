@@ -164,7 +164,7 @@ questions = [
     },
     {
         "question": "Open weights are how AI becomes infrastructure everyone owns, rather than a product rented from a few companies.",
-        "effect": {"ind": 0, "gov": 0, "open": 10, "moral": 0, "exp": 0, "traj": 0, "auto": 0, "intim": 0}
+        "effect": {"ind": 0, "gov": 5, "open": 5, "moral": 0, "exp": 0, "traj": 0, "auto": 0, "intim": 0}
     },
     {
         "question": "Frontier models should stay closed until their risks are well understood.",
@@ -172,7 +172,7 @@ questions = [
     },
     {
         "question": "Export controls on model weights are a legitimate tool of national security.",
-        "effect": {"ind": 0, "gov": 0, "open": -10, "moral": 0, "exp": 0, "traj": 0, "auto": 0, "intim": 0}
+        "effect": {"ind": 0, "gov": 5, "open": -5, "moral": 0, "exp": 0, "traj": 0, "auto": 0, "intim": 0}
     },
     {
         "question": "A person should be able to run a capable model on hardware they own without owing anyone a subscription.",
@@ -185,7 +185,7 @@ questions = [
     },
     {
         "question": "Calling an AI a 'friend' is a category error, however useful the tool.",
-        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 0, "traj": 0, "auto": 0, "intim": -10}
+        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": -5, "traj": 0, "auto": 0, "intim": -10}
     },
     {
         "question": "Society will eventually accept AI partnerships the way it now accepts meeting partners online.",
