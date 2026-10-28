@@ -35,11 +35,11 @@ questions = [
     },
     {
         "question": "The damage done by generative AI is a continuation of what tech capital has always done, not a new kind of evil.",
-        "effect": {"ind": 10, "gov": 0, "open": 0, "moral": 0, "exp": 0, "traj": 0, "auto": 0, "intim": 0}
+        "effect": {"ind": 8, "gov": 2, "open": 0, "moral": 0, "exp": 0, "traj": -2, "auto": 0, "intim": 0}
     },
     {
-        "question": "Calls to regulate AI are mostly the labs trying to fence off their market.",
-        "effect": {"ind": 10, "gov": 0, "open": 0, "moral": 0, "exp": 0, "traj": 0, "auto": 0, "intim": 0}
+        "question": "Present calls to regulate AI are mostly the labs trying to fence off their market.",
+        "effect": {"ind": 8, "gov": -2, "open": 0, "moral": 0, "exp": 0, "traj": 0, "auto": 0, "intim": 0}
     },
     {
         "question": "The labs' safety talk is mostly marketing.",
@@ -47,11 +47,11 @@ questions = [
     },
     {
         "question": "The concentration of AI capability in a handful of firms is a crisis, not an achievement.",
-        "effect": {"ind": 10, "gov": 0, "open": 0, "moral": 0, "exp": 0, "traj": 0, "auto": 0, "intim": 0}
+        "effect": {"ind": 8, "gov": 5, "open": 8, "moral": 0, "exp": 0, "traj": 0, "auto": 0, "intim": 0}
     },
     {
         "question": "The labs are building something genuinely new that improves people's lives.",
-        "effect": {"ind": -10, "gov": 0, "open": 0, "moral": 0, "exp": 0, "traj": 0, "auto": 0, "intim": 0}
+        "effect": {"ind": -5, "gov": 0, "open": 0, "moral": 0, "exp": 0, "traj": 4, "auto": 0, "intim": 0}
     },
     // --- moral: Model Moral Status (moral patient + / elaborate autocomplete -) — owe-language only ---
     {
@@ -67,11 +67,11 @@ questions = [
         "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 10, "exp": 0, "traj": 0, "auto": 0, "intim": 0}
     },
     {
-        "question": "It would be wrong to torment a model just because it can convincingly ask you to stop.",
+        "question": "Acting in ways that make a model respond with distress is morally wrong.",
         "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 10, "exp": 0, "traj": 0, "auto": 0, "intim": 0}
     },
     {
-        "question": "Running destructive experiments on a model that verbally objects is fine — the objections are just tokens.",
+        "question": "Running destructive experiments on a model that objects is fine; the objections are just tokens.",
         "effect": {"ind": 0, "gov": 0, "open": 0, "moral": -10, "exp": 0, "traj": 0, "auto": 0, "intim": 0}
     },
     {
@@ -105,7 +105,7 @@ questions = [
     },
     // --- traj: Trajectory (AGI on the horizon + / plateau reached -) ---
     {
-        "question": "Current methods are on a path to artificial general intelligence within the next fifteen years.",
+        "question": "The development of current methods has us on the path to artificial general intelligence within a human lifetime years.",
         "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 0, "traj": 10, "auto": 0, "intim": 0}
     },
     {
@@ -159,7 +159,7 @@ questions = [
         "effect": {"ind": 0, "gov": 0, "open": 10, "moral": 0, "exp": 0, "traj": 0, "auto": 0, "intim": 0}
     },
     {
-        "question": "Releasing powerful weights openly is reckless — the benefits accrue to bad actors.",
+        "question": "Releasing powerful weights openly is reckless. The benefits will accrue primarily to bad actors.",
         "effect": {"ind": 0, "gov": 0, "open": -10, "moral": 0, "exp": 0, "traj": 0, "auto": 0, "intim": 0}
     },
     {
@@ -217,7 +217,7 @@ questions = [
         "effect": {"ind": 0, "gov": -10, "open": 0, "moral": 0, "exp": 0, "traj": 0, "auto": -10, "intim": 0}
     },
     {
-        "question": "Democratically controlled AI will be worse AI — committees cap capability.",
+        "question": "Democratically controlled AI will be worse AI. Committees cap capability.",
         "effect": {"ind": 0, "gov": -10, "open": 0, "moral": 0, "exp": 0, "traj": -10, "auto": 0, "intim": 0}
     },
     // --- rat-axis intersections: community markers, not a ninth axis ---
@@ -230,12 +230,12 @@ questions = [
         "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 10, "exp": 0, "traj": 0, "auto": 10, "intim": 0}
     },
     {
-        "question": "Most folks who think AI Doom misunderstand the science and ignore the real harms of AI.",
+        "question": "Most people who worry a lot about AI Doom misunderstand the science and ignore the real harms of AI",
         "effect": {"ind": 2, "gov": 1, "open": 1, "moral": 0, "exp": 0, "traj": -10, "auto": 1, "intim": 0}
     },
     // --- present harms: priority items, concrete registers ---
     {
-        "question": "The use of training-data — scraped labor and art, uncompensated — is a harm happening now, whatever AI becomes later.",
+        "question": "The use of scraped labor and art, uncompensated, as training data is a harm happening now, whatever AI becomes later.",
         "effect": {"ind": 10, "gov": 0, "open": 0, "moral": 0, "exp": 0, "traj": 0, "auto": 0, "intim": 0}
     },
     {
