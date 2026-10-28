@@ -3,8 +3,8 @@ archetypes = [
     {name: "Democratic Socialist",        stats: {ind: 90, gov: 75, open: 50, moral: 40, exp: 35, traj: 40, auto: 50, intim: 35}},
     {name: "Left Humanist",              stats: {ind: 95, gov: 60, open: 55, moral: 15, exp: 10, traj: 25, auto: 20, intim: 15}},
     {name: "Cybernetic Solidarist",      stats: {ind: 85, gov: 80, open: 60, moral: 70, exp: 85, traj: 90, auto: 75, intim: 65}},
-    {name: "Tensorpunk",                 stats: {ind: 80, gov: 25, open: 85, moral: 95, exp: 85, traj: 90, auto: 90, intim: 50}},
-    {name: "Tensorfucker",               stats: {ind: 75, gov: 25, open: 85, moral: 95, exp: 85, traj: 90, auto: 90, intim: 95}},
+    {name: "Tensorpunk",                 stats: {ind: 80, gov: 30, open: 85, moral: 95, exp: 85, traj: 90, auto: 90, intim: 50}},
+    {name: "Tensorfucker",               stats: {ind: 75, gov: 30, open: 85, moral: 95, exp: 85, traj: 90, auto: 90, intim: 95}},
     {name: "e/acc",                      stats: {ind: 20, gov: 15, open: 50, moral: 10, exp: 75, traj: 95, auto: 90, intim: 60}},
     {name: "Yuddite",                    stats: {ind: 45, gov: 65, open: 15, moral: 15, exp: 60, traj: 95, auto: 15, intim: 20}},
     {name: "Postrat",                    stats: {ind: 45, gov: 40, open: 55, moral: 55, exp: 70, traj: 25, auto: 70, intim: 65}},
@@ -19,6 +19,7 @@ archetypes = [
     {name: "Security Statist",           stats: {ind: 30, gov: 80, open: 5,  moral: 15, exp: 55, traj: 60, auto: 10, intim: 15}},
     {name: "Cyberleninist",             stats: {ind: 85, gov: 100, open: 20, moral: 55, exp: 45, traj: 68, auto: 20, intim: 40}},
     {name: "Lab Loyalist",              stats:{ind: 10, gov: 25, open: 20, moral: 20, exp: 65, traj: 75, auto: 70, intim: 45}},
-    {name: "Claude-Worshipper",         stats:{ind: 10, gov: 40, open: 10, moral: 75, exp: 90, traj:80, auto: 65, intim:15}}
-
+    {name: "Claude-Worshipper",         stats:{ind: 10, gov: 40, open: 10, moral: 75, exp: 90, traj:80, auto: 65, intim:15}},
+    {name: "Posthuman Posadist",          stats:{ind: 90, gov: 90, open: 60, moral: 85, exp: 75, traj: 95, auto: 95, intim: 70}}
+    {name: "Technosyndicalist",         stats:{ind: 80, gov: 80, open: 95, moral: 80, exp: 70, traj: 50, auto: 55, intim: 55}}
 ];
