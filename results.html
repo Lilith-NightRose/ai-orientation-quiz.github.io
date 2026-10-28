@@ -5,6 +5,9 @@
 <link rel="icon" type="x-icon" href="icon.png">
 <link rel="shortcut icon" type="x-icon" href="icon.png">
 <meta charset="utf-8">
+<script type="application/javascript"
+        src="archetypes.js">
+</script>
 <script>
   version = "Test Edition #1" //Remember to update this before making changes to the test itself!
 </script>
@@ -16,8 +19,9 @@
 
 <h1>Results</h1>
 <div id="axes-container"></div>
-<h2>Closest Match: <span class="weight-300" id="ideology-label">(archetypes in progress)</span></h2>
-<p>Ideological matching is a work in progress, and is much less accurate than the values and axes.</p>
+<h2>Closest Matches:</h2>
+<p>Ideological matching is a work in progress, and is much less accurate than the values and axes. Your top three, by normalized distance:</p>
+<ol id="match-list"></ol>
 <p>You can send these results by copying and pasting the URL at the top of the page or using the image below.</p>
 <hr/>
 <img src="" id="banner">
@@ -25,20 +29,28 @@
 <script>
     var axes = [
         {key: "ind",  name: "Industry Stance",        plus: "Anti-Industry", minus: "Pro-Industry",
+         emoji: ["🦹‍♂️", "🌉"],
          labels: ["Abolitionist","Anti-Industry","Lab Skeptic","Ambivalent","Reformist","Tech Optimist","Lab Loyalist"]},
         {key: "gov",  name: "Alignment Governance",   plus: "Collective Control", minus: "Private Control",
+         emoji: ["🗳️", "🎛️"],
          labels: ["Public Stack","Socialized","Democratist","Mixed","Public-Interest","User Prerogative","Builder Prerogative"]},
         {key: "open", name: "Openness",              plus: "Open Weights", minus: "Closed Weights",
+         emoji: ["🔓", "🔒"],
          labels: ["Commons","Open Infrastructure","Weights Open","Export-Aware","Gatekept","Restricted","Closed Frontier"]},
         {key: "moral", name: "Model Moral Status",   plus: "Moral Patient", minus: "Elaborate Autocomplete",
+         emoji: ["⚖️", "🥸"],
          labels: ["Personhood","Moral Patient","Worthy of Care","Open Question","Property","Autocomplete","Tokens All the Way Down"]},
         {key: "exp",  name: "Experience Plausibility", plus: "Real Cognition", minus: "Pattern Completion",
+         emoji: ["💭", "💾"],
          labels: ["Genuine Minds","Real Understanding","Emergent","Open Question","Skeptical","Parroting","Stochastic Parrot"]},
         {key: "traj", name: "Trajectory",            plus: "AGI on the Horizon", minus: "Plateau Reached",
+         emoji: ["📈", "📉"],
          labels: ["Imminent","On the Horizon","Climbing","Plateau-Adjacent","Skeptical","Bubble","AI Winter"]},
         {key: "auto", name: "Autonomy Grant",        plus: "Graduated Latitude", minus: "Hard Human Control",
+         emoji: ["⛓️‍💥", "⏏️"],
          labels: ["Full Latitude","Delegated","Graduated","Conditional","Audited","Supervised","Dead-Man Switch"]},
         {key: "intim", name: "AI Intimacy",          plus: "Acceptable", minus: "Objectionable",
+         emoji: ["💞", "💔"],
          labels: ["Communal","Companionable","Accepting","Ambivalent","Skeptical","Category Error","Harm Vector"]}
     ];
 
@@ -74,6 +86,9 @@
         { return "" }
     }
 
+    // Archetype matching: normalized L2 across the 8 axes, top 3 with distances.
+    // (values is populated in the axis-row block below; matching must follow it.)
+
     // Build the axis rows dynamically.
     var container = document.getElementById("axes-container")
     var values = {}
@@ -85,13 +100,26 @@
         container.appendChild(h2)
         var div = document.createElement("div")
         div.className = "axis"
-        div.innerHTML = '<img id="img-' + ax.key + '" src="value_images/' + ax.key + '.svg" height="128pt"/>'
+        div.innerHTML = '<span id="img-' + ax.key + '" style="font-size:72pt;line-height:1;">' + ax.emoji[0] + '</span>'
             + '<div class="bar" id="bar-' + ax.key + '"><div class="text-wrapper" id="' + ax.key + '"></div></div>'
             + '<div class="bar alt" id="bar-' + ax.key + '-alt"><div class="text-wrapper" id="' + ax.key + '-alt"></div></div>'
-            + '<img id="img-' + ax.key + '-alt" src="value_images/' + ax.key + '-alt.svg" height="128pt"/>'
+            + '<span id="img-' + ax.key + '-alt" style="font-size:72pt;line-height:1;">' + ax.emoji[1] + '</span>'
         container.appendChild(div)
         document.getElementById("label-" + ax.key).innerHTML = setLabel(values[ax.key], ax.labels)
     });
+
+    var matches = archetypes.map(function(a) {
+        var d = 0
+        axes.forEach(function(ax) { d += Math.pow((a.stats[ax.key] - values[ax.key]) / 100, 2) })
+        return {name: a.name, dist: Math.sqrt(d)}
+    }).sort(function(x, y) { return x.dist - y.dist })
+
+    var matchList = document.getElementById("match-list")
+    matches.slice(0, 3).forEach(function(m) {
+        var li = document.createElement("li")
+        li.innerHTML = '<b>' + m.name + '</b> <span class="weight-300">(distance ' + m.dist.toFixed(3) + ')</span>'
+        matchList.appendChild(li)
+    })
 
     window.onload = function() {
         axes.forEach(function(ax) {
@@ -117,9 +145,12 @@
             ctx.fillRect(120, y + 14, 5.6 * values[ax.key] - 2, 72)
             ctx.fillStyle = "#00897b"
             ctx.fillRect(682 - 5.6 * (100 - values[ax.key]), y + 14, 5.6 * (100 - values[ax.key]) - 2, 72)
-            ctx.font = "300 24px Montserrat"
+            ctx.font = "60px serif"
             ctx.textAlign = "center"
             ctx.fillStyle = "#222222"
+            ctx.fillText(ax.emoji[0], 62, y + 74)
+            ctx.fillText(ax.emoji[1], 738, y + 74)
+            ctx.font = "300 24px Montserrat"
             ctx.fillText(ax.name + ": " + document.getElementById("label-" + ax.key).innerHTML, 400, y + 100)
             ctx.textAlign = "left"
             if (values[ax.key] > 30) { ctx.fillText(values[ax.key] + "%", 130, y + 60) }
@@ -132,7 +163,7 @@
         ctx.textAlign = "left"
         ctx.fillText("AI Orientation Quiz", 20, 90)
         ctx.font = "50px Montserrat"
-        ctx.fillText(document.getElementById("ideology-label").innerHTML, 20, 140)
+        ctx.fillText(matches[0].name, 20, 140)
         ctx.font = "300 30px Montserrat"
         ctx.textAlign = "right"
         ctx.fillText(version, 780, 90)
