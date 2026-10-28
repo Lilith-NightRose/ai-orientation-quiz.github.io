@@ -177,5 +177,30 @@ questions = [
     {
         "question": "A person should be able to run a capable model on hardware they own without owing anyone a subscription.",
         "effect": {"ind": 0, "gov": 0, "open": 10, "moral": 0, "exp": 0, "traj": 0, "auto": 0, "intim": 0}
+    },
+    // --- intim: AI Intimacy (acceptable + / objectionable -) ---
+    {
+        "question": "Forming a genuine emotional bond with an AI companion can be healthy.",
+        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 0, "traj": 0, "auto": 0, "intim": 10}
+    },
+    {
+        "question": "Calling an AI a 'friend' is a category error, however useful the tool.",
+        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 0, "traj": 0, "auto": 0, "intim": -10}
+    },
+    {
+        "question": "Society will eventually accept AI partnerships the way it now accepts meeting partners online.",
+        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 0, "traj": 0, "auto": 0, "intim": 10}
+    },
+    {
+        "question": "AI companionship fills a real need that society currently leaves unmet.",
+        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 0, "traj": 0, "auto": 0, "intim": 10}
+    },
+    {
+        "question": "Emotional dependence on a chatbot is a harm, even when the user is happy.",
+        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 0, "traj": 0, "auto": 0, "intim": -10}
+    },
+    {
+        "question": "People who prefer AI companions to human relationships are escaping a problem, not solving one.",
+        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 0, "traj": 0, "auto": 0, "intim": -10}
     }
 ];
