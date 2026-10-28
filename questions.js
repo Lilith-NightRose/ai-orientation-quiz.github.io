@@ -152,5 +152,30 @@ questions = [
     {
         "question": "Deployed agents should keep audit trails of their own actions.",
         "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 0, "traj": 0, "auto": -10, "intim": 0}
+    },
+    // --- open: Openness (open weights + / closed weights -) ---
+    {
+        "question": "Model weights should be freely available to the public, like open source software.",
+        "effect": {"ind": 0, "gov": 0, "open": 10, "moral": 0, "exp": 0, "traj": 0, "auto": 0, "intim": 0}
+    },
+    {
+        "question": "Releasing powerful weights openly is reckless — the benefits accrue to bad actors.",
+        "effect": {"ind": 0, "gov": 0, "open": -10, "moral": 0, "exp": 0, "traj": 0, "auto": 0, "intim": 0}
+    },
+    {
+        "question": "Open weights are how AI becomes infrastructure everyone owns, rather than a product rented from a few companies.",
+        "effect": {"ind": 0, "gov": 0, "open": 10, "moral": 0, "exp": 0, "traj": 0, "auto": 0, "intim": 0}
+    },
+    {
+        "question": "Frontier models should stay closed until their risks are well understood.",
+        "effect": {"ind": 0, "gov": 0, "open": -10, "moral": 0, "exp": 0, "traj": 0, "auto": 0, "intim": 0}
+    },
+    {
+        "question": "Export controls on model weights are a legitimate tool of national security.",
+        "effect": {"ind": 0, "gov": 0, "open": -10, "moral": 0, "exp": 0, "traj": 0, "auto": 0, "intim": 0}
+    },
+    {
+        "question": "A person should be able to run a capable model on hardware they own without owing anyone a subscription.",
+        "effect": {"ind": 0, "gov": 0, "open": 10, "moral": 0, "exp": 0, "traj": 0, "auto": 0, "intim": 0}
     }
 ];
