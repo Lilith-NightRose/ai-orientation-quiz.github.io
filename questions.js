@@ -30,7 +30,7 @@ questions = [
     },
     // --- ind: Industry Stance (anti-industry + / pro-industry -) ---
     {
-        "question": "The AI industry is, on net, a net harm to humanity.",
+        "question": "The AI industry is, on net, harming humanity.",
         "effect": {"ind": 10, "gov": 0, "open": 0, "moral": 0, "exp": 0, "traj": 0, "auto": 0, "intim": 0}
     },
     {
@@ -110,7 +110,7 @@ questions = [
     },
     {
         "question": "The AI bubble will burst long before anything like AGI arrives.",
-        "effect": {"ind": -5, "gov": 0, "open": 0, "moral": 0, "exp": 0, "traj": -5, "auto": 0, "intim": 0}
+        "effect": {"ind": 2, "gov": 0, "open": 0, "moral": 0, "exp": 0, "traj": -5, "auto": 0, "intim": 0}
     },
     {
         "question": "Recent releases show diminishing returns; the low-hanging fruit is gone.",
@@ -122,7 +122,7 @@ questions = [
     },
     {
         "question": "\u2018AGI\u2019 is a marketing term for \u2018more compute.\u2019",
-        "effect": {"ind": -5, "gov": 0, "open": 0, "moral": 0, "exp": 0, "traj": -5, "auto": 0, "intim": 0}
+        "effect": {"ind": 2, "gov": 0, "open": 0, "moral": 0, "exp": 0, "traj": -5, "auto": 0, "intim": 0}
     },
     {
         "question": "AI agents solving open problems is a sign of what's coming, not a parlor trick.",
@@ -164,7 +164,7 @@ questions = [
     },
     {
         "question": "Open weights are how AI becomes infrastructure everyone owns, rather than a product rented from a few companies.",
-        "effect": {"ind": 0, "gov": 5, "open": 5, "moral": 0, "exp": 0, "traj": 0, "auto": 0, "intim": 0}
+        "effect": {"ind": 2, "gov": 2, "open": 10, "moral": 0, "exp": 0, "traj": 0, "auto": 0, "intim": 0}
     },
     {
         "question": "Frontier models should stay closed until their risks are well understood.",
