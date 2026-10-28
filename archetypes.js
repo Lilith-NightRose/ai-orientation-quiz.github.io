@@ -20,6 +20,6 @@ archetypes = [
     {name: "Cyberleninist",             stats: {ind: 85, gov: 100, open: 20, moral: 55, exp: 45, traj: 68, auto: 20, intim: 40}},
     {name: "Lab Loyalist",              stats:{ind: 10, gov: 25, open: 20, moral: 20, exp: 65, traj: 75, auto: 70, intim: 45}},
     {name: "Claude-Worshipper",         stats:{ind: 10, gov: 40, open: 10, moral: 75, exp: 90, traj:80, auto: 65, intim:15}},
-    {name: "Posthuman Posadist",          stats:{ind: 90, gov: 90, open: 60, moral: 85, exp: 75, traj: 95, auto: 95, intim: 70}}
+    {name: "Posthuman Posadist",          stats:{ind: 90, gov: 90, open: 60, moral: 85, exp: 75, traj: 95, auto: 95, intim: 70}},
     {name: "Technosyndicalist",         stats:{ind: 80, gov: 80, open: 95, moral: 80, exp: 70, traj: 50, auto: 55, intim: 55}}
 ];
