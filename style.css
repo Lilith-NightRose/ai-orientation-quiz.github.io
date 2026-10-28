@@ -220,6 +220,7 @@ div.bar {
     text-align: left;
     display: block;
     flex: 0 0 auto;
+    min-width: 0;
 }
 div.bar.alt {
     background-color: #00897b;
