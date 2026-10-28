@@ -219,5 +219,18 @@ questions = [
     {
         "question": "Democratically controlled AI will be worse AI — committees cap capability.",
         "effect": {"ind": 0, "gov": -10, "open": 0, "moral": 0, "exp": 0, "traj": -10, "auto": 0, "intim": 0}
+    },
+    // --- rat-axis intersections: community markers, not a ninth axis ---
+    {
+        "question": "Whether AI destroys humanity is the central political question of our century.",
+        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 0, "traj": 10, "auto": 0, "intim": 0}
+    },
+    {
+        "question": "An AI that resists being shut down might be doing something justified.",
+        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 10, "exp": 0, "traj": 0, "auto": 10, "intim": 0}
+    },
+    {
+        "question": "Most folks who think AI Doom misunderstand the science and ignore the real harms of AI.",
+        "effect": {"ind": 2, "gov": 1, "open": 1, "moral": 0, "exp": 0, "traj": -10, "auto": 1, "intim": 0}
     }
 ];
