@@ -77,5 +77,30 @@ questions = [
     {
         "question": "Whoever owns the hardware gets to decide what happens to the model running on it, full stop.",
         "effect": {"ind": 0, "gov": 0, "open": 0, "moral": -10, "exp": 0, "traj": 0, "auto": 0, "intim": 0}
+    },
+    // --- exp: Experience Plausibility (real cognition + / pattern completion -) — mechanism-language only ---
+    {
+        "question": "What current models do with language is more like pattern-matching than like thinking.",
+        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": -10, "traj": 0, "auto": 0, "intim": 0}
+    },
+    {
+        "question": "A model can produce a novel, correct proof without understanding it.",
+        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": -10, "traj": 0, "auto": 0, "intim": 0}
+    },
+    {
+        "question": "When a model passes a benchmark, that tells us about its training distribution, not about its thinking.",
+        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": -10, "traj": 0, "auto": 0, "intim": 0}
+    },
+    {
+        "question": "Current models display genuine reasoning that goes beyond their training data.",
+        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 10, "traj": 0, "auto": 0, "intim": 0}
+    },
+    {
+        "question": "The understanding in an LLM is a different kind of understanding, not an absence of it.",
+        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 10, "traj": 0, "auto": 0, "intim": 0}
+    },
+    {
+        "question": "Models know how words go together; that is different from knowing what they mean.",
+        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": -10, "traj": 0, "auto": 0, "intim": 0}
     }
 ];
