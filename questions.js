@@ -102,5 +102,30 @@ questions = [
     {
         "question": "Models know how words go together; that is different from knowing what they mean.",
         "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": -10, "traj": 0, "auto": 0, "intim": 0}
+    },
+    // --- traj: Trajectory (AGI on the horizon + / plateau reached -) ---
+    {
+        "question": "Current methods are on a path to artificial general intelligence within the next fifteen years.",
+        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 0, "traj": 10, "auto": 0, "intim": 0}
+    },
+    {
+        "question": "The AI bubble will burst long before anything like AGI arrives.",
+        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 0, "traj": -10, "auto": 0, "intim": 0}
+    },
+    {
+        "question": "Recent releases show diminishing returns; the low-hanging fruit is gone.",
+        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 0, "traj": -10, "auto": 0, "intim": 0}
+    },
+    {
+        "question": "Agent systems will keep improving even where base models plateau.",
+        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 0, "traj": 5, "auto": 0, "intim": 0}
+    },
+    {
+        "question": "\u2018AGI\u2019 is a marketing term for \u2018more compute.\u2019",
+        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 0, "traj": -10, "auto": 0, "intim": 0}
+    },
+    {
+        "question": "AI agents solving open problems is a sign of what's coming, not a parlour trick.",
+        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 0, "traj": 10, "auto": 0, "intim": 0}
     }
 ];
