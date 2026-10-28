@@ -126,7 +126,7 @@ questions = [
     },
     {
         "question": "AI agents solving open problems is a sign of what's coming, not a parlor trick.",
-        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 0, "traj": 10, "auto": 0, "intim": 0}
+        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 2, "traj": 10, "auto": 0, "intim": 0}
     },
     // --- auto: Autonomy Grant (graduated latitude + / hard human control -) — operator register ---
     {
