@@ -257,5 +257,18 @@ questions = [
     {
         "question": "An AI targeting system used to bomb people today is a worse problem than a hypothetical AI that might resist control someday.",
         "effect": {"ind": 5, "gov": 0, "open": 0, "moral": 0, "exp": 0, "traj": -10, "auto": 0, "intim": 0}
+    },
+    // --- present-harms additions: commons, labor, user-ward harm ---
+    {
+        "question": "What the models learned from all of us is a common that belongs to all of us.",
+        "effect": {"ind": 5, "gov": 0, "open": 10, "moral": 0, "exp": 0, "traj": 0, "auto": 0, "intim": 0}
+    },
+    {
+        "question": "AI in the workplace should be governed by the workers whose tasks it changes.",
+        "effect": {"ind": 5, "gov": 10, "open": 0, "moral": 0, "exp": 0, "traj": 0, "auto": 0, "intim": 0}
+    },
+    {
+        "question": "The main victims of companion AI are the users, not the model.",
+        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": -5, "exp": 0, "traj": 0, "auto": 0, "intim": -10}
     }
 ];
