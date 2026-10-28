@@ -240,11 +240,11 @@ questions = [
     },
     {
         "question": "The problem with labs using training data isn't that it's art theft, it's that it's using the collective intellectual heritage of humanity to build closed tools",
-        "effect": {"ind": 5, "gov": 5, "open": 5, "moral": 0, "exp":0, "traj":0, "auto": 0, "intim": 0}
+        "effect": {"ind": 5, "gov": 0, "open": 5, "moral": 0, "exp":0, "traj":0, "auto": 0, "intim": 0}
     },
     {
         "question": "Deskilling as a result of AI tools that work faster than humans is a serious problem",
-        "effect": {"ind": 5, "gov": 0, "open": 0, "moral": 0, "exp":0, "traj":2, "auto": -5, "intim": 0}
+        "effect": {"ind": 8, "gov": 0, "open": 0, "moral": 0, "exp":0, "traj":2, "auto": 0, "intim": 0}
     },
     {
         "question": "The AI Labs are taking advantage of the loneliness epidemic to drive people to their products",
