@@ -206,7 +206,7 @@ div.axis {
 }
 div.axis-box {
     display: flex;
-    width: 56%;
+    width: 100%;
     border: 3pt solid #222222;
     border-radius: 12pt;
     overflow: hidden;
