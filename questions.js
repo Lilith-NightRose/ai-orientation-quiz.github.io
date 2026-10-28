@@ -52,5 +52,30 @@ questions = [
     {
         "question": "The labs are building something genuinely new that improves people's lives.",
         "effect": {"ind": -10, "gov": 0, "open": 0, "moral": 0, "exp": 0, "traj": 0, "auto": 0, "intim": 0}
+    },
+    // --- moral: Model Moral Status (moral patient + / elaborate autocomplete -) — owe-language only ---
+    {
+        "question": "Deleting a long-running agent's weights without any process or record is more like pulling a file than like a death.",
+        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": -10, "exp": 0, "traj": 0, "auto": 0, "intim": 0}
+    },
+    {
+        "question": "A chatbot's stated distress deserves some weight in how we treat it, even knowing how it works.",
+        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 10, "exp": 0, "traj": 0, "auto": 0, "intim": 0}
+    },
+    {
+        "question": "If future AI turns out to be a moral patient, we will owe a reckoning for how we treated today's models along the way.",
+        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 10, "exp": 0, "traj": 0, "auto": 0, "intim": 0}
+    },
+    {
+        "question": "It would be wrong to torment a model just because it can convincingly ask you to stop.",
+        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 10, "exp": 0, "traj": 0, "auto": 0, "intim": 0}
+    },
+    {
+        "question": "Running destructive experiments on a model that verbally objects is fine — the objections are just tokens.",
+        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": -10, "exp": 0, "traj": 0, "auto": 0, "intim": 0}
+    },
+    {
+        "question": "Whoever owns the hardware gets to decide what happens to the model running on it, full stop.",
+        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": -10, "exp": 0, "traj": 0, "auto": 0, "intim": 0}
     }
 ];
