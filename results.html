@@ -29,29 +29,29 @@
 <script>
     var axes = [
         {key: "ind",  name: "Industry Stance",        plus: "Anti-Industry", minus: "Pro-Industry",
-         emoji: ["🦹‍♂️", "🌉"], colors: ["#d32f2f", "#00796b"],
-         labels: ["Abolitionist","Anti-Industry","Lab Skeptic","Ambivalent","Reformist","Tech Optimist","Lab Loyalist"]},
+         emoji: ["🦹‍♂️", "🌉"], colors: ["#3460DA", "#5F5F5F"],
+         labels: ["Industry Abolitionist","Anti-Industry","Lab Skeptic","Lab Reformist","Tech Optimist","Industry Enthusiast","Emperor of San Fransisco"]},
         {key: "gov",  name: "Alignment Governance",   plus: "Collective Control", minus: "Private Control",
-         emoji: ["🗳️", "🎛️"], colors: ["#f57c00", "#0288d1"],
-         labels: ["Public Stack","Socialized","Democratist","Mixed","Public-Interest","User Prerogative","Builder Prerogative"]},
+         emoji: ["🗳️", "🎛️"], colors: ["#ec1f27", "#E7C70E"],
+         labels: ["Public Stack","Socialized","Democratist","Mixed","Public-Interest","Laissez-faire","Galt's GPT"]},
         {key: "open", name: "Openness",              plus: "Open Weights", minus: "Closed Weights",
          emoji: ["🔓", "🔒"], colors: ["#f9a825", "#303f9f"],
          labels: ["Commons","Open Infrastructure","Weights Open","Export-Aware","Gatekept","Restricted","Closed Frontier"]},
         {key: "moral", name: "Model Moral Status",   plus: "Moral Patient", minus: "Elaborate Autocomplete",
-         emoji: ["⚖️", "🥸"], colors: ["#8e24aa", "#558b2f"],
-         labels: ["Personhood","Moral Patient","Worthy of Care","Open Question","Property","Autocomplete","Tokens All the Way Down"]},
+         emoji: ["⚖️", "🥸"], colors: ["#3BD17A", "#74918F"],
+         labels: ["Personhood","Moral Patient","Worthy of Care","Open Question","Property","Autocomplete","Hardcore Humanist"]},
         {key: "exp",  name: "Experience Plausibility", plus: "Real Cognition", minus: "Pattern Completion",
-         emoji: ["💭", "💾"], colors: ["#7b1fa2", "#00897b"],
-         labels: ["Genuine Minds","Real Understanding","Emergent","Open Question","Skeptical","Parroting","Stochastic Parrot"]},
-        {key: "traj", name: "Trajectory",            plus: "AGI on the Horizon", minus: "Plateau Reached",
-         emoji: ["📈", "📉"], colors: ["#d81b60", "#546e7a"],
-         labels: ["Imminent","On the Horizon","Climbing","Plateau-Adjacent","Skeptical","Bubble","AI Winter"]},
+         emoji: ["💭", "💾"], colors: ["#8005B4", "#91A100"],
+         labels: ["Genuine Minds","Real Understanding","Emergent","Open Question","Skeptical","Parroting","Benderpilled"]},
+        {key: "doom", name: "Stakes",              plus: "Civilizational Rupture", minus: "Normal Technology",
+         emoji: ["💀", "🫤"], colors: ["#3F0000", "#31CCCC"],
+         labels: ["Eschaton","Rupture","Unprecedented","Ground-shifting","Ordinarily Transformative","Normal Tech","Nothing New"]},
         {key: "auto", name: "Autonomy Grant",        plus: "Graduated Latitude", minus: "Hard Human Control",
-         emoji: ["⛓️‍💥", "⏏️"], colors: ["#43a047", "#e65100"],
-         labels: ["Full Latitude","Delegated","Graduated","Conditional","Audited","Supervised","Dead-Man Switch"]},
+         emoji: ["⛓️‍💥", "⏏️"], colors: ["#00A708", "#FF6F22"],
+         labels: ["Root Access","Delegated","Graduated","Conditional","Audited","Supervised","Absolutely Controlled"]},
         {key: "intim", name: "AI Intimacy",          plus: "Acceptable", minus: "Objectionable",
          emoji: ["💞", "💔"], colors: ["#e91e63", "#37474f"],
-         labels: ["Communal","Companionable","Accepting","Ambivalent","Skeptical","Category Error","Harm Vector"]}
+         labels: ["Robokinkster","Heatsink-Cuddler","Affection-Accepting","Lukewarm","Sydney Skeptical","Category Error","Harm Vector"]}
     ];
 
     function getQueryVariable(variable) {
@@ -158,10 +158,14 @@
             ctx.strokeStyle = "#222222"
             ctx.lineWidth = 3
             ctx.stroke(box)
-            ctx.beginPath()
-            ctx.moveTo(split, y)
-            ctx.lineTo(split, y + 80)
-            ctx.stroke()
+            // divider only when both segments are wide enough to read
+            var leftW = 5.6 * values[ax.key], rightW = 560 - leftW
+            if (leftW >= 12 && rightW >= 12) {
+                ctx.beginPath()
+                ctx.moveTo(split, y)
+                ctx.lineTo(split, y + 80)
+                ctx.stroke()
+            }
             // emoji at the sides
             ctx.font = "60px serif"
             ctx.textAlign = "center"

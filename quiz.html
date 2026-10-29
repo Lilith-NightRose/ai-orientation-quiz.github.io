@@ -24,9 +24,16 @@
 
 <!-- JavaScript for the test itself -->
 <script>
-    var axes = ["ind","gov","open","moral","exp","traj","auto","intim"];
+    var axes = ["ind","gov","open","moral","exp","doom","auto","intim"];
     var max_score = {};    // Max possible score per axis
     var axis_scores = {};  // Per-question score per axis
+    // Present questions in a random order per taker (shallow copy; scoring is by
+    // index so the shuffle only affects presentation, never weights).
+    var questions = window.questions.map(function(q){ return q; });
+    for (var i = questions.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var t = questions[i]; questions[i] = questions[j]; questions[j] = t;
+    }
     axes.forEach(function(a) { max_score[a] = 0; axis_scores[a] = new Array(questions.length); });
     var qn = 0; // Question number
     init_question();
