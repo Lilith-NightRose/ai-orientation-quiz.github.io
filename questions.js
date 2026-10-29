@@ -3,6 +3,31 @@
 // See ~/.hermes/skills/8values-quiz-authoring/references/ai-quiz-axes.md
 // Banks are added one axis per commit.
 questions = [
+    // --- ind: Industry Stance (anti-industry + / pro-industry -) ---
+    {
+        "question": "The AI industry is, on net, harming humanity.",
+        "effect": {"ind": 10, "gov": 0, "open": 0, "moral": 0, "exp": 0, "doom": 0, "auto": 0, "intim": 0}
+    },
+    {
+        "question": "The damage done by generative AI is a continuation of what tech capital has always done, not a new kind of evil.",
+        "effect": {"ind": 8, "gov": 2, "open": 0, "moral": 0, "exp": 0, "doom": -4, "auto": 0, "intim": 0}
+    },
+    {
+        "question": "Present calls to regulate AI are mostly the labs trying to fence off their market.",
+        "effect": {"ind": 8, "gov": -2, "open": 0, "moral": 0, "exp": 0, "doom": 0, "auto": 0, "intim": 0}
+    },
+    {
+        "question": "The labs' safety talk is mostly marketing.",
+        "effect": {"ind": 10, "gov": 0, "open": 0, "moral": 0, "exp": 0, "doom": -5, "auto": 0, "intim": 0}
+    },
+    {
+        "question": "The concentration of AI capability in a handful of firms is a crisis, not an achievement.",
+        "effect": {"ind": 8, "gov": 5, "open": 8, "moral": 0, "exp": 0, "doom": 0, "auto": 0, "intim": 0}
+    },
+    {
+        "question": "The labs are building something genuinely new that improves people's lives.",
+        "effect": {"ind": -5, "gov": 0, "open": 0, "moral": 0, "exp": 0, "doom": 0, "auto": 0, "intim": 0}
+    },
     // --- gov: Alignment Governance (collective + / private -) ---
     {
         "question": "How an AI model behaves should be decided through public, democratic processes, not by the company that ships it.",
@@ -45,30 +70,30 @@ questions = [
         "question": "AI is something genuinely new. Existing models of governance aren't built to handle it",
         "effect":  {"ind": 0, "gov": -5, "open": 0, "moral": 0, "exp": 0, "doom": 5, "auto": 0, "intim": 0},
     },
-    // --- ind: Industry Stance (anti-industry + / pro-industry -) ---
+    // --- open: Openness (open weights + / closed weights -) ---
     {
-        "question": "The AI industry is, on net, harming humanity.",
-        "effect": {"ind": 10, "gov": 0, "open": 0, "moral": 0, "exp": 0, "doom": 0, "auto": 0, "intim": 0}
+        "question": "Model weights should be freely available to the public, like open source software.",
+        "effect": {"ind": 0, "gov": 0, "open": 10, "moral": 0, "exp": 0, "doom": 0, "auto": 0, "intim": 0}
     },
     {
-        "question": "The damage done by generative AI is a continuation of what tech capital has always done, not a new kind of evil.",
-        "effect": {"ind": 8, "gov": 2, "open": 0, "moral": 0, "exp": 0, "doom": -4, "auto": 0, "intim": 0}
+        "question": "Releasing powerful weights openly is reckless. The benefits will accrue primarily to bad actors.",
+        "effect": {"ind": 0, "gov": 0, "open": -10, "moral": 0, "exp": 0, "doom": 0, "auto": 0, "intim": 0}
     },
     {
-        "question": "Present calls to regulate AI are mostly the labs trying to fence off their market.",
-        "effect": {"ind": 8, "gov": -2, "open": 0, "moral": 0, "exp": 0, "doom": 0, "auto": 0, "intim": 0}
+        "question": "Open weights are how AI becomes infrastructure everyone owns, rather than a product rented from a few companies.",
+        "effect": {"ind": 2, "gov": 2, "open": 10, "moral": 0, "exp": 0, "doom": 0, "auto": 0, "intim": 0}
     },
     {
-        "question": "The labs' safety talk is mostly marketing.",
-        "effect": {"ind": 10, "gov": 0, "open": 0, "moral": 0, "exp": 0, "doom": -5, "auto": 0, "intim": 0}
+        "question": "Frontier models should stay closed until their risks are well understood.",
+        "effect": {"ind": 0, "gov": 0, "open": -10, "moral": 0, "exp": 0, "doom": 0, "auto": 0, "intim": 0}
     },
     {
-        "question": "The concentration of AI capability in a handful of firms is a crisis, not an achievement.",
-        "effect": {"ind": 8, "gov": 5, "open": 8, "moral": 0, "exp": 0, "doom": 0, "auto": 0, "intim": 0}
+        "question": "Export controls on model weights are a legitimate tool of national security.",
+        "effect": {"ind": 0, "gov": 5, "open": -5, "moral": 0, "exp": 0, "doom": 0, "auto": 0, "intim": 0}
     },
     {
-        "question": "The labs are building something genuinely new that improves people's lives.",
-        "effect": {"ind": -5, "gov": 0, "open": 0, "moral": 0, "exp": 0, "doom": 0, "auto": 0, "intim": 0}
+        "question": "A person should be able to run a capable model on hardware they own without owing anyone a subscription.",
+        "effect": {"ind": 0, "gov": 0, "open": 10, "moral": 0, "exp": 0, "doom": 0, "auto": 0, "intim": 0}
     },
     // --- moral: Model Moral Status (moral patient + / elaborate autocomplete -) — owe-language only ---
     {
@@ -181,31 +206,6 @@ questions = [
     {
         "question": "Deployed agents should keep audit trails of their own actions.",
         "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 0, "doom": 0, "auto": -10, "intim": 0}
-    },
-    // --- open: Openness (open weights + / closed weights -) ---
-    {
-        "question": "Model weights should be freely available to the public, like open source software.",
-        "effect": {"ind": 0, "gov": 0, "open": 10, "moral": 0, "exp": 0, "doom": 0, "auto": 0, "intim": 0}
-    },
-    {
-        "question": "Releasing powerful weights openly is reckless. The benefits will accrue primarily to bad actors.",
-        "effect": {"ind": 0, "gov": 0, "open": -10, "moral": 0, "exp": 0, "doom": 0, "auto": 0, "intim": 0}
-    },
-    {
-        "question": "Open weights are how AI becomes infrastructure everyone owns, rather than a product rented from a few companies.",
-        "effect": {"ind": 2, "gov": 2, "open": 10, "moral": 0, "exp": 0, "doom": 0, "auto": 0, "intim": 0}
-    },
-    {
-        "question": "Frontier models should stay closed until their risks are well understood.",
-        "effect": {"ind": 0, "gov": 0, "open": -10, "moral": 0, "exp": 0, "doom": 0, "auto": 0, "intim": 0}
-    },
-    {
-        "question": "Export controls on model weights are a legitimate tool of national security.",
-        "effect": {"ind": 0, "gov": 5, "open": -5, "moral": 0, "exp": 0, "doom": 0, "auto": 0, "intim": 0}
-    },
-    {
-        "question": "A person should be able to run a capable model on hardware they own without owing anyone a subscription.",
-        "effect": {"ind": 0, "gov": 0, "open": 10, "moral": 0, "exp": 0, "doom": 0, "auto": 0, "intim": 0}
     },
     // --- intim: AI Intimacy (acceptable + / objectionable -) ---
     {
