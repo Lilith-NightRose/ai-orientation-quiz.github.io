@@ -34,7 +34,7 @@ questions = [
     },
     {
         "question": "AI is something genuinely new. Existing models of governance aren't built to handle it",
-        "effect":  {"ind": 0, "gov": -10, "open": 0, "moral": 0, "exp": 0, "doom": 5, "auto": 0, "intim": 0},
+        "effect":  {"ind": 0, "gov": -5, "open": 0, "moral": 0, "exp": 0, "doom": 5, "auto": 0, "intim": 0},
     },
     // --- ind: Industry Stance (anti-industry + / pro-industry -) ---
     {
@@ -84,7 +84,7 @@ questions = [
     },
     {
         "question": "Whoever owns the hardware gets to decide what happens to the model running on it, full stop.",
-        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": -10, "exp": 0, "doom": 0, "auto": 0, "intim": 0}
+        "effect": {"ind": 0, "gov": -5, "open": 0, "moral": -10, "exp": 0, "doom": 0, "auto": 0, "intim": 0}
     },
     // --- exp: Experience Plausibility (real cognition + / pattern completion -) — mechanism-language only ---
     {
@@ -114,7 +114,7 @@ questions = [
     // --- doom: Stakes (civilizational rupture + / normal technology -) ---
     {
         "question": "AI is best understood as a normal technology: transformative, like electricity or the internet, but manageable within existing institutions.",
-        "effect": {"ind": -1, "gov": 0, "open": 0, "moral": 0, "exp": 0, "doom": -10, "auto": 0, "intim": 0}
+        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 0, "doom": -10, "auto": 0, "intim": 0}
     },
     {
         "question": "Whether or not AGI ever arrives, the question of AI is ultimately a question about whether civilization as we know it survives it.",
@@ -122,7 +122,7 @@ questions = [
     },
     {
         "question": "Any real damage from AI is accumulating gradually — slop, surveillance, deskilling, not arriving as any single rupture.",
-        "effect": {"ind": 3, "gov": 0, "open": 0, "moral": 0, "exp": 0, "doom": 7, "auto": 0, "intim": 0}
+        "effect": {"ind": 3, "gov": 0, "open": 0, "moral": 0, "exp": 0, "doom": -7, "auto": 0, "intim": 0}
     },
     {
         "question": "Something genuinely unprecedented is happening with AI, whatever the skeptics say.",
@@ -146,7 +146,7 @@ questions = [
     },
     {
         "question": "AI agents solving open problems is a sign of what's coming, not a parlor trick.",
-        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 5, "doom": 2, "auto": 0, "intim": 0}
+        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 4, "doom": 5, "auto": 0, "intim": 0}
     },
     // --- auto: Autonomy Grant (graduated latitude + / hard human control -) — operator register ---
     {
