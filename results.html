@@ -158,10 +158,14 @@
             ctx.strokeStyle = "#222222"
             ctx.lineWidth = 3
             ctx.stroke(box)
-            ctx.beginPath()
-            ctx.moveTo(split, y)
-            ctx.lineTo(split, y + 80)
-            ctx.stroke()
+            // divider only when both segments are wide enough to read
+            var leftW = 5.6 * values[ax.key], rightW = 560 - leftW
+            if (leftW >= 12 && rightW >= 12) {
+                ctx.beginPath()
+                ctx.moveTo(split, y)
+                ctx.lineTo(split, y + 80)
+                ctx.stroke()
+            }
             // emoji at the sides
             ctx.font = "60px serif"
             ctx.textAlign = "center"

@@ -198,6 +198,19 @@ div.explanation_axis {
     width: 20.9%;
     vertical-align: top;
 }
+@media (max-width: 700px) {
+    .spacer {
+        display: block;
+    }
+    .spacer > div {
+        display: block;
+        width: 100% !important;
+        margin: 0 0 8px 0;
+    }
+    p.axis_name {
+        margin-top: 10px;
+    }
+}
 div.axis {
     width: 100%;
     display: flex;
