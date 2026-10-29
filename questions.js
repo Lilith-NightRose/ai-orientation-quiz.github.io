@@ -105,23 +105,23 @@ questions = [
     },
     // --- doom: Stakes (civilizational rupture + / normal technology -) ---
     {
-        "question": "AI is best understood as a normal technology — transformative, like electricity or the internet, but manageable within existing institutions.",
-        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 0, "doom": -10, "auto": 0, "intim": 0}
+        "question": "AI is best understood as a normal technology: transformative, like electricity or the internet, but manageable within existing institutions.",
+        "effect": {"ind": -1, "gov": 0, "open": 0, "moral": 0, "exp": 0, "doom": -10, "auto": 0, "intim": 0}
     },
     {
         "question": "Whether or not AGI ever arrives, the question of AI is ultimately a question about whether civilization as we know it survives it.",
         "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 0, "doom": 10, "auto": 0, "intim": 0}
     },
     {
-        "question": "The real damage of AI is accumulating gradually — slop, surveillance, deskilling — not arriving as any single rupture.",
+        "question": "Any real damage from AI is accumulating gradually — slop, surveillance, deskilling, not arriving as any single rupture.",
         "effect": {"ind": 3, "gov": 0, "open": 0, "moral": 0, "exp": 0, "doom": 7, "auto": 0, "intim": 0}
     },
     {
         "question": "Something genuinely unprecedented is happening with AI, whatever the skeptics say.",
-        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 0, "doom": 7, "auto": 0, "intim": 0}
+        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 1, "doom": 10, "auto": 0, "intim": 0}
     },
     {
-        "question": "Within a decade, AI policy will just be industrial policy — procurement, labor, standards — nothing more mystical.",
+        "question": "Within a decade, AI policy will just be industrial policy: procurement, labor, standards, nothing more mystical.",
         "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 0, "doom": -10, "auto": 0, "intim": 0}
     },
     {
@@ -129,16 +129,12 @@ questions = [
         "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 0, "doom": -10, "auto": 0, "intim": 0}
     },
     {
-        "question": "The AI bubble will burst long before anything like AGI arrives.",
-        "effect": {"ind": 2, "gov": 0, "open": 0, "moral": 0, "exp": 0, "doom": -5, "auto": 0, "intim": 0}
+        "question": "Even if the AI Bubble Burst, AI isn't going away.",
+        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 1, "doom": 1, "auto": 0, "intim": 0}
     },
     {
         "question": "Recent releases show diminishing returns; the low-hanging fruit is gone.",
-        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 0, "doom": -7, "auto": 0, "intim": 0}
-    },
-    {
-        "question": "Agent systems will keep improving even where base models plateau.",
-        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 5, "doom": 0, "auto": 5, "intim": 0}
+        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": -3, "doom": -7, "auto": 0, "intim": 0}
     },
     {
         "question": "'AGI' is a marketing term for 'more compute.'",
@@ -146,7 +142,7 @@ questions = [
     },
     {
         "question": "AI agents solving open problems is a sign of what's coming, not a parlor trick.",
-        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 5, "doom": 0, "auto": 0, "intim": 0}
+        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 5, "doom": 2, "auto": 0, "intim": 0}
     },
     // --- auto: Autonomy Grant (graduated latitude + / hard human control -) — operator register ---
     {
@@ -155,7 +151,7 @@ questions = [
     },
     {
         "question": "Every deployed model should have a tested, reliable kill-switch.",
-        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 0, "doom": 0, "auto": -10, "intim": 0}
+        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 0, "doom": 1, "auto": -10, "intim": 0}
     },
     {
         "question": "An agent should be allowed to act first and explain later when speed matters.",
@@ -167,11 +163,11 @@ questions = [
     },
     {
         "question": "Requiring human sign-off for every consequential AI action would cost more than it saves.",
-        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 0, "doom": 0, "auto": 10, "intim": 0}
+        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 0, "doom": -2, "auto": 10, "intim": 0}
     },
     {
         "question": "Deployed agents should keep audit trails of their own actions.",
-        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 0, "doom": 0, "auto": -10, "intim": 0}
+        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 0, "doom": -2, "auto": -10, "intim": 0}
     },
     // --- open: Openness (open weights + / closed weights -) ---
     {
@@ -276,7 +272,7 @@ questions = [
     },
     {
         "question": "An AI targeting system used to bomb people today is a worse problem than a hypothetical AI that might resist control someday.",
-        "effect": {"ind": 5, "gov": 0, "open": 0, "moral": 0, "exp": 0, "doom": -5, "auto": 0, "intim": 0}
+        "effect": {"ind": 7, "gov": 0, "open": 0, "moral": 0, "exp": 0, "doom": -3, "auto": 0, "intim": 0}
     },
     // --- present-harms additions: commons, labor, user-ward harm ---
     {
@@ -285,7 +281,7 @@ questions = [
     },
     {
         "question": "AI in the workplace should be governed by the workers whose tasks it changes.",
-        "effect": {"ind": 5, "gov": 10, "open": 0, "moral": 0, "exp": 0, "doom": 0, "auto": 0, "intim": 0}
+        "effect": {"ind": 5, "gov": 10, "open": 0, "moral": 0, "exp": 0, "doom": 2, "auto": -2, "intim": 0}
     },
     {
         "question": "The main victims of companion AI are the users, not the model.",
