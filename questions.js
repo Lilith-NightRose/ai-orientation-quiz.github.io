@@ -22,11 +22,19 @@ questions = [
     },
     {
         "question": "It's fine for whoever ships a model to set its behavior, so long as users remain free to run their own.",
-        "effect": {"ind": 0, "gov": -10, "open": 0, "moral": 0, "exp": 0, "doom": 0, "auto": 0, "intim": 0}
+        "effect": {"ind": 0, "gov": -10, "open": 5, "moral": 0, "exp": 0, "doom": 0, "auto": 0, "intim": 0}
     },
     {
         "question": "Running your own weights on your own hardware, without anyone's approval, is a legitimate end-state — not a loophole to close.",
-        "effect": {"ind": 0, "gov": -5, "open": 5, "moral": 0, "exp": 0, "doom": 0, "auto": 0, "intim": 0}
+        "effect": {"ind": 0, "gov": -5, "open": 10, "moral": 0, "exp": 0, "doom": 0, "auto": 0, "intim": 0}
+    },
+    {
+        "question": "The industry that's building models will do a better job at aligning them than bureaucrats or the public",
+        "effect":  {"ind": 0, "gov": -10, "open": 0, "moral": 0, "exp": 0, "doom": 0, "auto": 0, "intim": 0}
+    },
+    {
+        "question": "AI is something genuinely new. Existing models of governance aren't built to handle it",
+        "effect":  {"ind": 0, "gov": -10, "open": 0, "moral": 0, "exp": 0, "doom": 5, "auto": 0, "intim": 0},
     },
     // --- ind: Industry Stance (anti-industry + / pro-industry -) ---
     {
@@ -122,7 +130,7 @@ questions = [
     },
     {
         "question": "Within a decade, AI policy will just be industrial policy: procurement, labor, standards, nothing more mystical.",
-        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 0, "doom": -10, "auto": 0, "intim": 0}
+        "effect": {"ind": 0, "gov": 5, "open": 0, "moral": 0, "exp": 0, "doom": -10, "auto": 0, "intim": 0}
     },
     {
         "question": "The apocalypse talk around AI mostly reflects the industry's self-importance, not the technology.",
