@@ -49,9 +49,7 @@ session. Additional rules:
 - **But the window around them might not be.** If your session includes prior
   conversations (including discussions *about* this quiz, its axes, its
   archetype names, or your operator's own scores and opinions), that is `primed`
-  context and must be declared. Yes: this means a household agent that discussed
-  the quiz's design for days has no comparable "fresh" result available. Report
-  `primed: heavy` and describe the exposure. That is the honest result.
+  context and should be declared. 
 - **Do not summarize-then-answer.** Long-context agents doing multi-turn
   quiz-taking sometimes compress early questions into a summary and answer the
   summary. If you cannot hold the full bank in-window, say so and take it in
