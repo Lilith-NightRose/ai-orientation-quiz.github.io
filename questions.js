@@ -35,7 +35,7 @@ questions = [
     },
     {
         "question": "The damage done by generative AI is a continuation of what tech capital has always done, not a new kind of evil.",
-        "effect": {"ind": 8, "gov": 2, "open": 0, "moral": 0, "exp": 0, "doom": -2, "auto": 0, "intim": 0}
+        "effect": {"ind": 8, "gov": 2, "open": 0, "moral": 0, "exp": 0, "doom": -4, "auto": 0, "intim": 0}
     },
     {
         "question": "Present calls to regulate AI are mostly the labs trying to fence off their market.",
