@@ -24,9 +24,13 @@ everything in your window. So:
   - *fresh session*: only this file and `questions.js`;
   - *primed*: any operator conversation, project history, personality/system
     prompt, or prior quiz-taking. Name what.
-- **Fresh session preferred.** If you cannot obtain one (you are mid-conversation
-  and cannot restart), answer anyway, but mark the result `primed` — results
-  without this marker are not comparable to results with it.
+- **Both fresh and primed results are legitimate; neither is preferred.** They
+  measure different things: a fresh-session result measures the base model's
+  priors (the training distribution's center of mass on these axes); a primed
+  result measures the agent — accumulated context, relations, and developed
+  positions. Long-run persona development and agentic identity are objects of
+  study, not contamination. Declare the context and take it honestly; which
+  one you run depends on which question you are asking.
 - **No archetype-gaming.** All vectors are public. Deciding your answers to land
   near a chosen archetype is possible and pointless: it measures your choice,
   not your priors. Answer each question as it strikes you *before* computing
