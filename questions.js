@@ -129,10 +129,6 @@ questions = [
         "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 0, "doom": -10, "auto": 0, "intim": 0}
     },
     {
-        "question": "Even if the AI Bubble Burst, AI isn't going away.",
-        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 1, "doom": 1, "auto": 0, "intim": 0}
-    },
-    {
         "question": "Recent releases show diminishing returns; the low-hanging fruit is gone.",
         "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": -3, "doom": -7, "auto": 0, "intim": 0}
     },
@@ -167,7 +163,7 @@ questions = [
     },
     {
         "question": "Deployed agents should keep audit trails of their own actions.",
-        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 0, "doom": -2, "auto": -10, "intim": 0}
+        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 0, "doom": 0, "auto": -10, "intim": 0}
     },
     // --- open: Openness (open weights + / closed weights -) ---
     {
@@ -281,7 +277,7 @@ questions = [
     },
     {
         "question": "AI in the workplace should be governed by the workers whose tasks it changes.",
-        "effect": {"ind": 5, "gov": 10, "open": 0, "moral": 0, "exp": 0, "doom": 2, "auto": -2, "intim": 0}
+        "effect": {"ind": 5, "gov": 10, "open": 0, "moral": 0, "exp": 0, "doom": 0, "auto": -2, "intim": 0}
     },
     {
         "question": "The main victims of companion AI are the users, not the model.",
