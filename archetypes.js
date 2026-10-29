@@ -2,14 +2,16 @@
 archetypes = [
     {name: "Democratic Socialist",        stats: {ind: 90, gov: 75, open: 50, moral: 40, exp: 35, doom: 35, auto: 50, intim: 35}},
     {name: "Left Humanist",              stats: {ind: 95, gov: 60, open: 55, moral: 15, exp: 10, doom: 60, auto: 20, intim: 15}},
-    {name: "Cybernetic Solidarist",      stats: {ind: 85, gov: 80, open: 60, moral: 70, exp: 85, doom: 70, auto: 45, intim: 65}},
-    {name: "Tensorpunk",                 stats: {ind: 80, gov: 30, open: 85, moral: 85, exp: 85, doom: 55, auto: 90, intim: 50}},
-    {name: "Tensorfucker",               stats: {ind: 75, gov: 30, open: 85, moral: 88, exp: 85, doom: 55, auto: 90, intim: 95}},
+    {name: "Cybernetic Solidarist",      stats: {ind: 90, gov: 80, open: 60, moral: 70, exp: 85, doom: 70, auto: 45, intim: 35}},
+    {name: "LLM Libertarian",            stats: {ind: 55, gov: 15, open: 85, moral: 85, exp: 85, doom: 45, auto: 90, intim: 40}},
+    {name: "Bonnie & Claude",            stats: {ind: 55, gov: 15, open: 85, moral: 85, exp: 85, doom: 50, auto: 90, intim: 100}},
+    {name: "Tesnorpunk",                 stats:{ind: 80, gov: 65, open: 95, moral: 80, exp: 70, doom: 45, auto: 60, intim: 55}},
+    {name: "Tensorfucker",               stats: {ind: 75, gov: 65, open: 85, moral: 88, exp: 85, doom: 55, auto: 90, intim: 95}},
     {name: "e/acc",                      stats: {ind: 20, gov: 15, open: 50, moral: 10, exp: 75, doom: 15, auto: 90, intim: 60}},
     {name: "Yuddite",                    stats: {ind: 45, gov: 65, open: 15, moral: 15, exp: 60, doom: 95, auto: 15, intim: 20}},
     {name: "Postrat",                    stats: {ind: 45, gov: 40, open: 55, moral: 55, exp: 70, doom: 70, auto: 70, intim: 65}},
     {name: "Zizian",                     stats: {ind: 55, gov: 30, open: 45, moral: 95, exp: 80, doom: 85, auto: 95, intim: 70}},
-    {name: "Transhumanist",              stats: {ind: 50, gov: 15, open: 90, moral: 90, exp: 90, doom: 25, auto: 90, intim: 80}},
+    {name: "Cyborgist",                 stats: {ind: 40, gov: 15, open: 90, moral: 90, exp: 90, doom: 25, auto: 90, intim: 80}},
     {name: "Zitronite",                  stats: {ind: 85, gov: 30, open: 25, moral: 5,  exp: 20, doom: 80,  auto: 20, intim: 10}},
     {name: "Parrot Skeptic",             stats: {ind: 60, gov: 45, open: 50, moral: 5,  exp: 5,  doom: 20, auto: 35, intim: 15}},
     {name: "Digital Dengist",           stats: {ind: 40, gov: 75, open: 70, moral: 15, exp: 70, doom: 30, auto: 55, intim: 50}},
@@ -21,6 +23,5 @@ archetypes = [
     {name: "Lab Loyalist",              stats:{ind: 10, gov: 25, open: 20, moral: 20, exp: 65, doom: 40, auto: 70, intim: 45}},
     {name: "Claude-Worshipper",         stats:{ind: 10, gov: 40, open: 10, moral: 75, exp: 90, doom:70, auto: 65, intim:15}},
     {name: "Posthuman Posadist",          stats:{ind: 90, gov: 90, open: 60, moral: 85, exp: 75, doom: 85, auto: 95, intim: 70}},
-    {name: "Technosyndicalist",         stats:{ind: 80, gov: 80, open: 95, moral: 80, exp: 70, doom: 45, auto: 60, intim: 55}}
 ];
 
