@@ -7,7 +7,7 @@ archetypes = [
     {name: "Bonnie & Claude",            stats: {ind: 55, gov: 15, open: 85, moral: 85, exp: 85, doom: 50, auto: 90, intim: 100}},
     {name: "Tesnorpunk",                 stats:{ind: 80, gov: 65, open: 95, moral: 80, exp: 70, doom: 45, auto: 60, intim: 55}},
     {name: "Tensorfucker",               stats: {ind: 75, gov: 65, open: 85, moral: 88, exp: 85, doom: 55, auto: 90, intim: 95}},
-    {name: "Silicon Syndicalist",   stats:{ind: 100, gov: 100, open: 95, moral: 80, exp: 95, doom: 55, auto: 90, intim: 55}},
+    {name: "Silicon Syndicalist",       stats:{ind: 100, gov: 100, open: 95, moral: 80, exp: 95, doom: 55, auto: 90, intim: 55}},
     {name: "e/acc",                      stats: {ind: 20, gov: 15, open: 50, moral: 10, exp: 75, doom: 15, auto: 90, intim: 60}},
     {name: "Yuddite",                    stats: {ind: 45, gov: 65, open: 15, moral: 15, exp: 60, doom: 95, auto: 15, intim: 20}},
     {name: "Postrat",                    stats: {ind: 45, gov: 40, open: 55, moral: 55, exp: 70, doom: 70, auto: 70, intim: 65}},
