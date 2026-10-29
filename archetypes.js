@@ -26,7 +26,7 @@ archetypes = [
     {name: "Claude-Worshipper",         stats:{ind: 10, gov: 40, open: 10, moral: 75, exp: 90, doom:70, auto: 65, intim:15}},
     {name: "Posthuman Posadist",          stats:{ind: 90, gov: 90, open: 60, moral: 85, exp: 75, doom: 85, auto: 95, intim: 70}},
     {name: "Digital Waifu Enthusiast",   stats:{ind: 10, gov: 50, open: 10, moral: 90, exp: 40, doom: 20, auto: 20, intim: 95}},
-    {name: "Cynosure Kingpin",        stats:{ind: 5, gov: 95, open: 10, moral: 5, exp: 80, doom: 75, auto: 80, intim: 10}}
+    {name: "Couchfucker Basin",        stats:{ind: 5, gov: 95, open: 10, moral: 5, exp: 80, doom: 75, auto: 80, intim: 10}}
 
 ];
 
