@@ -1,6 +1,7 @@
 // Archetype vectors (0-100 per axis) — calibration populations from axis audits, priors not facts; playtest-adjust per row.
 archetypes = [
     {name: "Democratic Socialist",        stats: {ind: 90, gov: 75, open: 50, moral: 40, exp: 35, doom: 35, auto: 50, intim: 35}},
+    {name: "Bay Area Technolib",         stats: {ind: 50, gov: 50, open: 60, moral: 40, exp: 25, doom: 10, auto: 25, intim: 20}},
     {name: "Left Humanist",              stats: {ind: 95, gov: 60, open: 55, moral: 15, exp: 10, doom: 60, auto: 20, intim: 15}},
     {name: "Cybernetic Solidarist",      stats: {ind: 90, gov: 80, open: 60, moral: 70, exp: 85, doom: 70, auto: 45, intim: 35}},
     {name: "LLM Libertarian",            stats: {ind: 55, gov: 15, open: 85, moral: 85, exp: 85, doom: 45, auto: 90, intim: 40}},
