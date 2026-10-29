@@ -93,11 +93,11 @@ questions = [
     },
     {
         "question": "Whoever owns the hardware gets to decide what happens to the model running on it, full stop.",
-        "effect": {"ind": 0, "gov": -5, "open": 0, "moral": -10, "exp": 0, "doom": 0, "auto": 0, "intim": 0}
+        "effect": {"ind": 0, "gov": -5, "open": 0, "moral": -10, "exp": 0, "doom": 0, "auto": -2, "intim": 0}
     },
     // --- exp: Experience Plausibility (real cognition + / pattern completion -) — mechanism-language only ---
     {
-        "question": "What current models do with language is more like pattern-matching than like thinking.",
+        "question": "What current frontier or near-frontier language models do with language is more like pattern-matching than like thinking.",
         "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": -10, "doom": 0, "auto": 0, "intim": 0}
     },
     {
@@ -109,7 +109,7 @@ questions = [
         "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": -10, "doom": 0, "auto": 0, "intim": 0}
     },
     {
-        "question": "Current models display genuine reasoning that goes beyond their training data.",
+        "question": "Current frontier or near-frontier language models display genuine reasoning that goes beyond their training data.",
         "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 10, "doom": 0, "auto": 0, "intim": 0}
     },
     {
