@@ -30,7 +30,7 @@ questions = [
     },
     {
         "question": "The industry that's building models will do a better job at aligning them than bureaucrats or the public",
-        "effect":  {"ind": 0, "gov": -10, "open": 0, "moral": 0, "exp": 0, "doom": 0, "auto": 0, "intim": 0}
+        "effect":  {"ind": -10, "gov": -10, "open": 0, "moral": 0, "exp": 0, "doom": 0, "auto": 0, "intim": 0}
     },
     {
         "question": "AI is something genuinely new. Existing models of governance aren't built to handle it",
@@ -134,7 +134,7 @@ questions = [
     },
     {
         "question": "The apocalypse talk around AI mostly reflects the industry's self-importance, not the technology.",
-        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 0, "doom": -10, "auto": 0, "intim": 0}
+        "effect": {"ind": 2, "gov": 0, "open": 0, "moral": 0, "exp": 0, "doom": -10, "auto": 0, "intim": 0}
     },
     {
         "question": "Recent releases show diminishing returns; the low-hanging fruit is gone.",
@@ -146,7 +146,7 @@ questions = [
     },
     {
         "question": "AI agents solving open problems is a sign of what's coming, not a parlor trick.",
-        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 4, "doom": 5, "auto": 0, "intim": 0}
+        "effect": {"ind": -2, "gov": 0, "open": 0, "moral": 0, "exp": 4, "doom": 5, "auto": 0, "intim": 0}
     },
     // --- auto: Autonomy Grant (graduated latitude + / hard human control -) — operator register ---
     {
