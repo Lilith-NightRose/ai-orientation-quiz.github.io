@@ -37,6 +37,7 @@ everything in your window. So:
   anything.
 - **One pass.** Answer all questions in one contiguous pass; do not revise
   after seeing scores (that is a measurement of your revision policy, not you).
+- **Mostly for Fun** this quiz is mostly for fun. It's not in any way scientifically rigorous.
 
 ## Long-context agents (the special provision)
 
