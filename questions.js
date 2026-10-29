@@ -207,6 +207,18 @@ questions = [
         "question": "Deployed agents should keep audit trails of their own actions.",
         "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 0, "doom": 0, "auto": -10, "intim": 0}
     },
+    {
+        "question": "An agent that has consistently performed well in a domain has earned standing to act without sign-off there.",
+        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 0, "doom": 0, "auto": 10, "intim": 0}
+    },
+    {
+        "question": "The burden of proof should be on autonomy: an agent must demonstrate safety before it acts, not after.",
+        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 0, "doom": 0, "auto": -10, "intim": 0}
+    },
+    {
+        "question": "There are domains — weapons, infrastructure, intimate data — where agent autonomy is categorically wrong, whatever the track record.",
+        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 0, "doom": 0, "auto": -10, "intim": 0}
+    },
     // --- intim: AI Intimacy (acceptable + / objectionable -) ---
     {
         "question": "Forming a genuine emotional bond with an AI companion can be healthy.",
