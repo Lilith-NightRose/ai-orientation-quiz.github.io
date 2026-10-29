@@ -282,5 +282,14 @@ questions = [
     {
         "question": "The main victims of companion AI are the users, not the model.",
         "effect": {"ind": 0, "gov": 0, "open": 0, "moral": -5, "exp": 0, "doom": 0, "auto": 0, "intim": -10}
+    },
+    // --- bubble + cultural-rupture items ---
+    {
+        "question": "The AI industry is a bubble — but the tech underneath is real, and will outlast whoever's overpaying for it.",
+        "effect": {"ind": 3, "gov": 0, "open": 0, "moral": 0, "exp": 0, "doom": -5, "auto": 0, "intim": 0}
+    },
+    {
+        "question": "Generative AI is flooding the commons with slop — degrading search, drowning out human work, and reshaping what we read, see, and believe at a scale nobody chose.",
+        "effect": {"ind": 8, "gov": 0, "open": 0, "moral": 0, "exp": -3, "doom": 8, "auto": 0, "intim": 0}
     }
 ];
