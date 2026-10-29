@@ -51,7 +51,7 @@ questions = [
     },
     {
         "question": "The labs' safety talk is mostly marketing.",
-        "effect": {"ind": 10, "gov": 0, "open": 0, "moral": 0, "exp": 0, "doom": 0, "auto": 0, "intim": 0}
+        "effect": {"ind": 10, "gov": 0, "open": 0, "moral": 0, "exp": 0, "doom": -5, "auto": 0, "intim": 0}
     },
     {
         "question": "The concentration of AI capability in a handful of firms is a crisis, not an achievement.",
@@ -247,7 +247,7 @@ questions = [
     },
     {
         "question": "An AI that resists being shut down might be doing something justified.",
-        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 10, "exp": 0, "doom": 0, "auto": 10, "intim": 0}
+        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 10, "exp": 0, "doom": 2, "auto": 10, "intim": 0}
     },
     {
         "question": "Most people who worry a lot about AI Doom misunderstand the science and ignore the real harms of AI",
