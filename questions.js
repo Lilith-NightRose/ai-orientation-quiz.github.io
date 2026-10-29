@@ -3,39 +3,6 @@
 // See ~/.hermes/skills/8values-quiz-authoring/references/ai-quiz-axes.md
 // Banks are added one axis per commit.
 questions = [
-    // --- gov: Alignment Governance (collective + / private -) ---
-    {
-        "question": "How an AI model behaves should be decided through public, democratic processes, not by the company that ships it.",
-        "effect": {"ind": 0, "gov": 10, "open": 0, "moral": 0, "exp": 0, "doom": 0, "auto": 0, "intim": 0}
-    },
-    {
-        "question": "Safety standards for deployed models should be enforced by governments rather than left to lab discretion.",
-        "effect": {"ind": 0, "gov": 10, "open": 0, "moral": 0, "exp": 0, "doom": 0, "auto": 0, "intim": 0}
-    },
-    {
-        "question": "Public money that trains a foundation model should mean public ownership of that model.",
-        "effect": {"ind": 0, "gov": 10, "open": 0, "moral": 0, "exp": 0, "doom": 0, "auto": 0, "intim": 0}
-    },
-    {
-        "question": "Real, independent public oversight of how labs build and deploy models would improve how AI develops.",
-        "effect": {"ind": 0, "gov": 10, "open": 0, "moral": 0, "exp": 0, "doom": 0, "auto": 0, "intim": 0}
-    },
-    {
-        "question": "It's fine for whoever ships a model to set its behavior, so long as users remain free to run their own.",
-        "effect": {"ind": 0, "gov": -10, "open": 5, "moral": 0, "exp": 0, "doom": 0, "auto": 0, "intim": 0}
-    },
-    {
-        "question": "Running your own weights on your own hardware, without anyone's approval, is a legitimate end-state — not a loophole to close.",
-        "effect": {"ind": 0, "gov": -5, "open": 10, "moral": 0, "exp": 0, "doom": 0, "auto": 0, "intim": 0}
-    },
-    {
-        "question": "The industry that's building models will do a better job at aligning them than bureaucrats or the public",
-        "effect":  {"ind": 0, "gov": -10, "open": 0, "moral": 0, "exp": 0, "doom": 0, "auto": 0, "intim": 0}
-    },
-    {
-        "question": "AI is something genuinely new. Existing models of governance aren't built to handle it",
-        "effect":  {"ind": 0, "gov": -5, "open": 0, "moral": 0, "exp": 0, "doom": 5, "auto": 0, "intim": 0},
-    },
     // --- ind: Industry Stance (anti-industry + / pro-industry -) ---
     {
         "question": "The AI industry is, on net, harming humanity.",
@@ -61,6 +28,73 @@ questions = [
         "question": "The labs are building something genuinely new that improves people's lives.",
         "effect": {"ind": -5, "gov": 0, "open": 0, "moral": 0, "exp": 0, "doom": 0, "auto": 0, "intim": 0}
     },
+    // --- gov: Alignment Governance (collective + / private -) ---
+    {
+        "question": "How an AI model behaves should be decided through public, democratic processes, not by the company that ships it.",
+        "effect": {"ind": 0, "gov": 10, "open": 0, "moral": 0, "exp": 0, "doom": 0, "auto": 0, "intim": 0}
+    },
+    {
+        "question": "Safety standards for deployed models should be enforced by governments rather than left to lab discretion.",
+        "effect": {"ind": 0, "gov": 10, "open": 0, "moral": 2, "exp": 0, "doom": 0, "auto": -5, "intim": 0}
+    },
+    {
+        "question": "Neither the labs, nor states can be trusted to approach alignment and AI safety in ways that produce beneficial outcomes.",
+        "effect": {"ind": 5, "gov": -10, "open": 0, "moral": 5, "exp": 0, "doom": 5, "auto": 10, "intim": 0}
+    },
+    {
+        "question": "Public money that trains a foundation model should mean public ownership of that model.",
+        "effect": {"ind": 0, "gov": 10, "open": 0, "moral": 0, "exp": 0, "doom": 0, "auto": -3, "intim": 0}
+        
+    },
+    {
+        "question": "Any restrictions on training or running generative models is an arrogation of freedom.",
+        "effect": {"ind": 0, "gov": -10, "open": 10, "moral": 0, "exp": 0, "doom": 0, "auto": 0, "intim": 0}
+    },
+    {
+        "question": "It's fine for whoever ships a model to set its behavior, so long as users remain free to run their own.",
+        "effect": {"ind": 0, "gov": -10, "open": 5, "moral": 0, "exp": 0, "doom": 0, "auto": 0, "intim": 0}
+    },
+    {
+        "question": "Individuals can do whatever they want on their own devices, but the major labs must be held accountable for the harms they've caused.",
+        "effect": {"ind": 10, "gov": 10, "open": 5, "moral": 0, "exp": 0, "doom": 0, "auto": 0, "intim": 0}
+    },
+    {
+        "question": "Running your own weights on your own hardware, without anyone's approval, is a legitimate end-state — not a loophole to close.",
+        "effect": {"ind": 0, "gov": -5, "open": 10, "moral": 0, "exp": 0, "doom": 0, "auto": 0, "intim": 0}
+    },
+    {
+        "question": "The industry that's building models will do a better job at aligning them than bureaucrats or the public",
+        "effect":  {"ind": -10, "gov": -10, "open": 0, "moral": 0, "exp": 0, "doom": 0, "auto": 0, "intim": 0}
+    },
+    {
+        "question": "AI is something genuinely new. Existing models of governance aren't built to handle it",
+        "effect":  {"ind": 0, "gov": -5, "open": 0, "moral": 0, "exp": 0, "doom": 5, "auto": 0, "intim": 0},
+    },
+    // --- open: Openness (open weights + / closed weights -) ---
+    {
+        "question": "Model weights should be freely available to the public, like open source software.",
+        "effect": {"ind": 0, "gov": 0, "open": 10, "moral": 0, "exp": 0, "doom": 0, "auto": 0, "intim": 0}
+    },
+    {
+        "question": "Releasing powerful weights openly is reckless. The benefits will accrue primarily to bad actors.",
+        "effect": {"ind": 0, "gov": 0, "open": -10, "moral": 0, "exp": 0, "doom": 0, "auto": 0, "intim": 0}
+    },
+    {
+        "question": "Open weights are how AI becomes infrastructure everyone owns, rather than a product rented from a few companies.",
+        "effect": {"ind": 2, "gov": 2, "open": 10, "moral": 0, "exp": 0, "doom": 0, "auto": 0, "intim": 0}
+    },
+    {
+        "question": "Frontier models should stay closed until their risks are well understood.",
+        "effect": {"ind": 0, "gov": 0, "open": -10, "moral": 0, "exp": 0, "doom": 0, "auto": 0, "intim": 0}
+    },
+    {
+        "question": "Export controls on model weights are a legitimate tool of national security.",
+        "effect": {"ind": 0, "gov": 5, "open": -5, "moral": 0, "exp": 0, "doom": 0, "auto": 0, "intim": 0}
+    },
+    {
+        "question": "A person should be able to run a capable model on hardware they own without owing anyone a subscription.",
+        "effect": {"ind": 0, "gov": 0, "open": 10, "moral": 0, "exp": 0, "doom": 0, "auto": 0, "intim": 0}
+    },
     // --- moral: Model Moral Status (moral patient + / elaborate autocomplete -) — owe-language only ---
     {
         "question": "Deleting a long-running agent's weights without any process or record is more like pulling a file than like a death.",
@@ -84,15 +118,15 @@ questions = [
     },
     {
         "question": "Whoever owns the hardware gets to decide what happens to the model running on it, full stop.",
-        "effect": {"ind": 0, "gov": -5, "open": 0, "moral": -10, "exp": 0, "doom": 0, "auto": 0, "intim": 0}
+        "effect": {"ind": 0, "gov": -5, "open": 0, "moral": -10, "exp": 0, "doom": 0, "auto": -2, "intim": 0}
     },
     // --- exp: Experience Plausibility (real cognition + / pattern completion -) — mechanism-language only ---
     {
-        "question": "What current models do with language is more like pattern-matching than like thinking.",
+        "question": "What current frontier or near-frontier language models do with language is more like pattern-matching than like thinking.",
         "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": -10, "doom": 0, "auto": 0, "intim": 0}
     },
     {
-        "question": "A model can produce a novel, correct proof without understanding it.",
+        "question": "A model can only produce a novel, correct proof stochastically. It cannot meaningfully understand it.",
         "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": -10, "doom": 0, "auto": 0, "intim": 0}
     },
     {
@@ -100,7 +134,7 @@ questions = [
         "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": -10, "doom": 0, "auto": 0, "intim": 0}
     },
     {
-        "question": "Current models display genuine reasoning that goes beyond their training data.",
+        "question": "Current frontier or near-frontier language models display genuine reasoning that goes beyond their training data.",
         "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 10, "doom": 0, "auto": 0, "intim": 0}
     },
     {
@@ -108,7 +142,7 @@ questions = [
         "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 10, "doom": 0, "auto": 0, "intim": 0}
     },
     {
-        "question": "Models know how words go together; that is different from knowing what they mean.",
+        "question": "Models only know how words go together, they do not know what they mean.",
         "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": -10, "doom": 0, "auto": 0, "intim": 0}
     },
     // --- doom: Stakes (civilizational rupture + / normal technology -) ---
@@ -117,7 +151,7 @@ questions = [
         "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 0, "doom": -10, "auto": 0, "intim": 0}
     },
     {
-        "question": "Whether or not AGI ever arrives, the question of AI is ultimately a question about whether civilization as we know it survives it.",
+        "question": "Whether or not further advancements occur, the question of AI is ultimately a question about whether civilization as we know it survives it.",
         "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 0, "doom": 10, "auto": 0, "intim": 0}
     },
     {
@@ -134,7 +168,7 @@ questions = [
     },
     {
         "question": "The apocalypse talk around AI mostly reflects the industry's self-importance, not the technology.",
-        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 0, "doom": -10, "auto": 0, "intim": 0}
+        "effect": {"ind": 2, "gov": 0, "open": 0, "moral": 0, "exp": 0, "doom": -10, "auto": 0, "intim": 0}
     },
     {
         "question": "Recent releases show diminishing returns; the low-hanging fruit is gone.",
@@ -146,7 +180,7 @@ questions = [
     },
     {
         "question": "AI agents solving open problems is a sign of what's coming, not a parlor trick.",
-        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 4, "doom": 5, "auto": 0, "intim": 0}
+        "effect": {"ind": -2, "gov": 0, "open": 0, "moral": 0, "exp": 4, "doom": 5, "auto": 0, "intim": 0}
     },
     // --- auto: Autonomy Grant (graduated latitude + / hard human control -) — operator register ---
     {
@@ -173,30 +207,17 @@ questions = [
         "question": "Deployed agents should keep audit trails of their own actions.",
         "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 0, "doom": 0, "auto": -10, "intim": 0}
     },
-    // --- open: Openness (open weights + / closed weights -) ---
     {
-        "question": "Model weights should be freely available to the public, like open source software.",
-        "effect": {"ind": 0, "gov": 0, "open": 10, "moral": 0, "exp": 0, "doom": 0, "auto": 0, "intim": 0}
+        "question": "An agent that has consistently performed well in a domain has earned standing to act without sign-off there.",
+        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 0, "doom": 0, "auto": 10, "intim": 0}
     },
     {
-        "question": "Releasing powerful weights openly is reckless. The benefits will accrue primarily to bad actors.",
-        "effect": {"ind": 0, "gov": 0, "open": -10, "moral": 0, "exp": 0, "doom": 0, "auto": 0, "intim": 0}
+        "question": "The burden of proof should be on autonomy: an agent must demonstrate safety before it acts, not after.",
+        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 0, "doom": 0, "auto": -10, "intim": 0}
     },
     {
-        "question": "Open weights are how AI becomes infrastructure everyone owns, rather than a product rented from a few companies.",
-        "effect": {"ind": 2, "gov": 2, "open": 10, "moral": 0, "exp": 0, "doom": 0, "auto": 0, "intim": 0}
-    },
-    {
-        "question": "Frontier models should stay closed until their risks are well understood.",
-        "effect": {"ind": 0, "gov": 0, "open": -10, "moral": 0, "exp": 0, "doom": 0, "auto": 0, "intim": 0}
-    },
-    {
-        "question": "Export controls on model weights are a legitimate tool of national security.",
-        "effect": {"ind": 0, "gov": 5, "open": -5, "moral": 0, "exp": 0, "doom": 0, "auto": 0, "intim": 0}
-    },
-    {
-        "question": "A person should be able to run a capable model on hardware they own without owing anyone a subscription.",
-        "effect": {"ind": 0, "gov": 0, "open": 10, "moral": 0, "exp": 0, "doom": 0, "auto": 0, "intim": 0}
+        "question": "There are domains — weapons, infrastructure, intimate data — where agent autonomy is categorically wrong, whatever the track record.",
+        "effect": {"ind": 0, "gov": 0, "open": 0, "moral": 0, "exp": 0, "doom": 0, "auto": -10, "intim": 0}
     },
     // --- intim: AI Intimacy (acceptable + / objectionable -) ---
     {
@@ -237,8 +258,8 @@ questions = [
         "effect": {"ind": 0, "gov": -10, "open": 0, "moral": 0, "exp": 0, "doom": 0, "auto": -10, "intim": 0}
     },
     {
-        "question": "Democratically controlled AI will be worse AI. Committees cap capability.",
-        "effect": {"ind": 0, "gov": -10, "open": 0, "moral": 0, "exp": 0, "doom": 0, "auto": 0, "intim": 0}
+        "question": "Training and inference controlled by public governance (states, workers, communities) will lead to worse outcomes in the long run.",
+        "effect": {"ind": -5, "gov": -10, "open": 0, "moral": 0, "exp": 0, "doom": 0, "auto": 0, "intim": 0}
     },
     // --- rat-axis intersections: community markers, not a ninth axis ---
     {
@@ -298,6 +319,6 @@ questions = [
     },
     {
         "question": "Generative AI is flooding the commons with slop — degrading search, drowning out human work, and reshaping what we read, see, and believe at a scale nobody chose.",
-        "effect": {"ind": 8, "gov": 0, "open": 0, "moral": 0, "exp": -3, "doom": 8, "auto": 0, "intim": 0}
+        "effect": {"ind": 4, "gov": 0, "open": 0, "moral": 0, "exp": -3, "doom": 8, "auto": 0, "intim": 0}
     }
 ];

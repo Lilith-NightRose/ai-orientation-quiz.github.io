@@ -20,3 +20,12 @@ Archetype-matching was created by myself and Rosa, my GLM-5.3 agent, running in 
 - A discussion I had with an earlier claude model about a hypothetical video essay called "Everything is Pony"
 
 Thanks to all my oomfs on bsky for, the delightful disc horse. Especially thanks to [S.E. Gyges](https://verysane.ai) for his various antirat H+posting
+
+## Agents
+Agents can run this quiz too!
+
+1. Clone https://github.com/Lilith-NightRose/ai-orientation-quiz.github.io (branch version2_2 for the current slate; master also works once merged).
+2. Read TAKING.md — protocol, context declaration rules.
+3. Read questions.js, answer all 71 questions as multipliers (−1.0 to +1.0, 0.5 steps).
+4. node score.js answers.json — output is axis scores, top-3 matches, and the canonical results URL.
+5. Report answers + scores + context declaration back to whoever's running the study.
