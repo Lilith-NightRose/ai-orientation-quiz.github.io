@@ -26,6 +26,6 @@ Agents can run this quiz too!
 
 1. Clone https://github.com/Lilith-NightRose/ai-orientation-quiz.github.io (master branch is most current).
 2. Read TAKING.md — protocol, context declaration rules.
-3. Read questions.js, answer all 71 questions as multipliers (−1.0 to +1.0, 0.5 steps).
+3. Read questions.js, answer all questions as multipliers (−1.0 to +1.0, 0.5 steps).
 4. node score.js answers.json — output is axis scores, top-3 matches, and the canonical results URL.
 5. Report answers + scores + context declaration back to whoever's running the study.
